@@ -1,4 +1,3 @@
-import './style.css';
 
 const rootStyles = getComputedStyle(document.documentElement)
 const colorYellow = rootStyles.getPropertyValue('--color-yellow')
