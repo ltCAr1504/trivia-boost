@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 
 *{
@@ -6,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
   outline: none;
   font-family: 'Dancing Script', cursive;
 }
@@ -31,39 +33,155 @@
 body{
   background: var(--color-white);
   position: relative;
+  overflow-x: hidden;
 }
 
-body::before{
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  background-color: #1F51FF;
-  z-index: -1;
-  filter: blur(500px);
-  
-}
+
 
 
 
 .header{
-  padding: 40px 40px;
+  padding: 2.3rem 5rem
 }
 
 
 .header__logo .header__title {
-  font-size: 4em;
-  background: linear-gradient(45deg, #1F51FF, #8A2BE2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 4.5em;
+  color: var(--color-blue);
 
- 
-  text-shadow:
-    2px 2px 5px rgba(31, 81, 255, 0.7),   
-    -2px -2px 5px rgba(138, 43, 226, 0.7), 
-    0 0 20px rgba(138, 43, 226, 0.5),      
-    0 0 40px rgba(31, 81, 255, 0.3);       
+  text-shadow: 2px 2px 5px var(--color-blue);
 }
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar{
+
+  background-color: transparent;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: 2px solid rgba(50, 205, 50,.8);
+  transition: .3s ease;
+
+}
+
+.navbar a{
+  color: var(--color-green);
+  font-family: 'Raleway';
+  font-size: 1em;
+  font-weight: bold;
+  position: relative;
+  transition: .3s ease;
+}
+
+.navbar a::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  height: 2px;
+  width: 0%;
+  transition: .5s ease;
+}
+
+.navbar a:hover::after{
+  width: 100%;
+}
+
+
+
+.navbar .nav__links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar .nav__dropdown-menu{
+  display: none;
+}
+
+.nav__login{
+  background-color: transparent;
+  border: 2px solid rgba(50, 205, 50,.8);
+  padding: .8rem 3rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px black;
+  transition: .2s ease;
+  
+
+}
+
+.nav__login .btn__login{
+  color: var(--color-green);
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 1em;
+  transition: .2s ease;
+}
+
+.nav__login:hover{
+  background-color: var(--color-yellow);
+  border: 2px solid var(--color-yellow);
+
+}
+
+.nav__login:hover .btn__login{
+  color: white;
+}
+
+.homepage{
+  height: 100vh;
+}
+
+.homepage .homepage__hero{
+  padding: 10rem 0;
+  gap: 20px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homepage .homepage__title{
+  font-size: 8rem;
+  font-family: 'Raleway';
+  color: #222;
+}
+
+.homepage .homepage__title span{
+  background: linear-gradient(90deg, #007BFF, #6f42c1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .homepage__subtitle{
+  font-size: 2rem;
+  font-family: 'Raleway';
+  color: #444;
+}
+
+.homepage .homepage__button{
+  font-size: 1.5em;
+  font-family: 'Raleway';
+  color: var(--color-green);
+  padding: 15px 40px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 2px solid var(--color-green);
+  transition: .2s ease;
+}
+
+.homepage .homepage__button:hover{
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: white;
+}
+

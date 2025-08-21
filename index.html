@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>.</title>
 </head>
 <body>
@@ -11,8 +10,37 @@
     <div class="header__logo">
       <h1 class="header__title">TriviaBoost</h1>
     </div>
+    <nav class="navbar">
+      <ul class="nav__links">
+        <li><a href="#" id="nav__link">Home</a></li>
+        <li class="nav__dropdown">
+          <a href="#" id="nav__link">Subjects</a>
+          <ul class="nav__dropdown-menu">
+            <li><a href="#">Math</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">History</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="nav__link">Leaderboard</a></li>
+        <li><a href="#" id="nav__link">Achievements</a></li>
+        <li><a href="#" id="nav__link">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__login">
+      <a href="#" class="btn__login">Login</a>
+    </div>
   </header>
 
-  <script src="src/main.js"></script>
+  <main class="homepage">
+    <section class="homepage__hero">
+      <h1 class="homepage__title">Welcome To <span>TriviaBoost</span></h1>
+      <p class="homepage__subtitle">Test your knowledge in math, science, history, programming and more!</p>
+      <a href="#" class="homepage__button">Play Quiz</a>
+    </section>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>
