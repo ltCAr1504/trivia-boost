@@ -68,6 +68,7 @@ body{
   border: 2px solid rgba(50, 205, 50,.8);
   transition: .3s ease;
   box-shadow: inset 2px 4px 6px white;
+  position: relative;
 
 }
 
@@ -81,8 +82,27 @@ body{
   height: 100%;
 }
 
+.navbar .nav__dropdown:hover .nav__dropdown-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  pointer-events: initial;
+}
+
 .navbar .nav__dropdown-menu{
   display: none;
+  pointer-events: none;
+  position: absolute;
+  background-color: var(--color-green);
+  width: 100%;
+  left: 0;
+  padding:  2rem 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navbar .nav__dropdown-menu li a{
+  color: white;
 }
 
 .navbar a{
@@ -146,8 +166,8 @@ body{
 
 
 .nav__register .btn__1:hover{
-  box-shadow: 0px 0px 10px var(--color-blue),
-              0px 0px 10px var(--color-purple)
+  box-shadow: 0px 1px 2px var(--color-blue),
+              0px 1px 3px var(--color-purple)
 }
 
 .nav__register .btn__2{
@@ -157,8 +177,8 @@ body{
 }
 
 .nav__register .btn__2:hover{
-  box-shadow: 0px 0px 10px var(--color-blue),
-              0px 0px 10px var(--color-green)
+  box-shadow: 0px 1px 3px var(--color-blue),
+              0px 1px 2px var(--color-green)
 }
 
 
