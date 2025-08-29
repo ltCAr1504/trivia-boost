@@ -51,12 +51,14 @@ dropDownBox.addEventListener('mouseleave', () => {
 
 
 dropDownLinkBox.addEventListener('mouseenter', () => {
+  dropDownLink.classList.add('active')
   navbar.style.borderBottomLeftRadius = '0px'
   navbar.style.borderBottomRightRadius = '0px'
 })
 
 
 dropDownLinkBox.addEventListener('mouseleave', () => {
+  dropDownLink.classList.remove('active')
   navbar.style.borderBottomLeftRadius = '10px'
   navbar.style.borderBottomRightRadius = '10px'
 })

@@ -115,6 +115,25 @@ body{
   opacity: 1;
   pointer-events: initial;
 }
+#nav__dropdown__link{
+  position: relative;
+}
+
+#nav__dropdown__link::after{
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 2px;
+  background-color: white;
+  width: 0%;
+  transition: .2s ease;
+}
+
+#nav__dropdown__link.active::after{
+  width: 100%;
+}
+
 
 .navbar .nav__dropdown-menu li{
   justify-content: left;
@@ -122,7 +141,6 @@ body{
 }
 .navbar .nav__dropdown-menu li a{
   color: white;
-  pointer-events: none;
 }
 
 .navbar a{
@@ -137,7 +155,7 @@ body{
   transition: .3s ease;
 }
 
-.navbar a::after{
+.navbar #nav__link::after{
   content: '';
   position: absolute;
   bottom: 10px;
@@ -148,7 +166,7 @@ body{
   transition: .5s ease;
 }
 
-.navbar a:hover::after{
+.navbar #nav__link:hover::after{
   width: 100%;
 }
 
