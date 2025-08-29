@@ -163,7 +163,7 @@ body{
   background-color: white;
   height: 2px;
   width: 0%;
-  transition: .5s ease;
+  transition: .2s ease;
 }
 
 .navbar #nav__link:hover::after{
@@ -278,3 +278,22 @@ body{
   display: flex;
 }
 
+@media (min-width: 600px) {
+  .header{
+    padding: 1rem 2rem;
+  }
+
+  .header__logo .header__title{
+    font-size: 2.5rem;
+  }
+
+  .navbar{
+    padding: 0 20px;
+  }
+
+  .nav__links li{
+    padding: 0 20px;
+  }
+
+  
+}
