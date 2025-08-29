@@ -296,7 +296,19 @@ body{
   }
 
   .homepage .homepage__hero{
-    height: 600px;
+    height: 550px;
+  }
+
+  .homepage__hero .homepage__title{
+    font-size: 6rem;
+  }
+
+  .homepage__hero .homepage__subtitle{
+    font-size: 1.5rem;
+  }
+
+  .homepage__hero .homepage__button{
+    padding: 7.5px 20px;
   }
 
   
