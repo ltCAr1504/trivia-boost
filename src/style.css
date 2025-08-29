@@ -64,10 +64,9 @@ body{
   background-color: transparent;
   padding: 0 40px;
   height: 50px;
-  border-radius: 10px;
   border: 2px solid rgba(50, 205, 50,.8);
   transition: .3s ease;
-  box-shadow: inset 2px 4px 6px white;
+  border-radius: 10px;
   position: relative;
 
 }
@@ -75,34 +74,55 @@ body{
 .navbar .nav__links{
   display: flex;
   height: 100%;
-  gap: 40px;
+  width: 100%;
 }
 
 .nav__links li{
   height: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__links .nav__link{
+  width: 100%;
+}
+
+
+
+.navbar .nav__dropdown-menu{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background-color: var(--color-yellow);
+  width: calc(100% + 4px);
+  left: -2px;
+  top: 99%;
+  z-index: 1;
+  border: 2px solid var(--color-yellow);
+  padding:  1.5rem 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: opacity .3s ease;
 }
 
 .navbar .nav__dropdown:hover .nav__dropdown-menu{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  opacity: 1;
   pointer-events: initial;
 }
 
-.navbar .nav__dropdown-menu{
-  display: none;
-  pointer-events: none;
-  position: absolute;
-  background-color: var(--color-green);
-  width: 100%;
-  left: 0;
-  padding:  2rem 1.5rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.navbar .nav__dropdown-menu li{
+  justify-content: left;
+  padding: 0px;
 }
-
 .navbar .nav__dropdown-menu li a{
   color: white;
+  pointer-events: none;
 }
 
 .navbar a{
@@ -131,7 +151,6 @@ body{
 .navbar a:hover::after{
   width: 100%;
 }
-
 
 .nav__register{
   justify-self: end;
@@ -166,8 +185,8 @@ body{
 
 
 .nav__register .btn__1:hover{
-  box-shadow: 0px 1px 2px var(--color-blue),
-              0px 1px 3px var(--color-purple)
+  box-shadow: 0px 0px 30px var(--color-blue),
+              0px 1px 60px var(--color-purple)
 }
 
 .nav__register .btn__2{
@@ -177,8 +196,8 @@ body{
 }
 
 .nav__register .btn__2:hover{
-  box-shadow: 0px 1px 3px var(--color-blue),
-              0px 1px 2px var(--color-green)
+  box-shadow: 0px 1px 30px var(--color-blue),
+              0px 1px 60px var(--color-green)
 }
 
 
