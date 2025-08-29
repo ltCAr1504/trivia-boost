@@ -278,13 +278,13 @@ body{
   display: flex;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 1750px) {
   .header{
     padding: 1rem 2rem;
   }
 
   .header__logo .header__title{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .navbar{
@@ -293,6 +293,10 @@ body{
 
   .nav__links li{
     padding: 0 20px;
+  }
+
+  .homepage .homepage__hero{
+    height: 600px;
   }
 
   
