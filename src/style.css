@@ -95,7 +95,7 @@ body{
   display: flex;
   justify-content: left;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   opacity: 0;
   pointer-events: none;
   position: absolute;
@@ -105,23 +105,33 @@ body{
   top: 99%;
   z-index: 1;
   border: 2px solid var(--color-yellow);
-  padding:  1.5rem 2rem;
+  padding:  1.5rem 2.5rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: opacity .3s ease;
 }
 
-.nav__dropdown-menu .dropdown__link{
+.nav__dropdown-menu li{
   display: flex;
-  font-size: 1.1em;
-  gap: 5px;
+  font-size: 1.2em;
+  gap: 3px;
 }
 
 
-.nav__dropdown-menu .dropdown__link img{
+.nav__dropdown-menu li img{
   height: auto;
   width: 25px;
 
+}
+
+
+#programming__video__icon{
+  height: auto;
+  width: 50px;
+}
+#history__video__icon{
+  height: 50px;
+  width: 50px;
 }
 
 .navbar .nav__dropdown:hover .nav__dropdown-menu{
