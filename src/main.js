@@ -6,7 +6,7 @@ const links = document.querySelectorAll('#nav__link')
 const dropDownLinkBox = document.querySelector('.nav__dropdown')
 const dropDownLink = document.getElementById('nav__dropdown__link');
 const dropDownBox = document.querySelector('.nav__dropdown-menu')
-
+const historyLink = document.querySelector('.dropdown__link__history')
 
 
 
@@ -62,8 +62,5 @@ dropDownLinkBox.addEventListener('mouseleave', () => {
   navbar.style.borderBottomLeftRadius = '10px'
   navbar.style.borderBottomRightRadius = '10px'
 })
-
-
-
 
 
