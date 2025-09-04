@@ -16,12 +16,12 @@
       <ul class="nav__links">
         <li><a href="#" id="nav__link">Home</a></li>
         <li class="nav__dropdown">
-          <a href="#" id="nav__dropdown__link">Subjects<img src="public/img/arrow-dropdown.png" alt=""></a>
+          <a href="#" id="nav__dropdown__link">Subjects</a>
           <ul class="nav__dropdown-menu">
-            <li><img id="math__icon" src="public/img/math-icon.png" alt=""><a href="#" class="dropdown__link__math">Math</a></li>
-            <li><img id="science__icon" src="public/img/science-icon.png" alt=""><a href="#" class="dropdown__link__science">Science</a></li>
-            <li><img id="programming__icon" src="public/img/programming-icon.png" alt=""><a href="#" class="dropdown__link__programming">Programming</a></li>
-            <li><img id="history__icon" src="public/img/history-icon.png" alt=""><a href="#" class="dropdown__link__history">History</a>
+            <li><a href="#" class="dropdown__link">Math</a></li>
+            <li><a href="#" class="dropdown__link">Science</a></li>
+            <li><a href="#" class="dropdown__link">Programming</a></li>
+            <li><a href="#" class="dropdown__link">History</a>
           </ul>
         </li>
         <li><a href="#" id="nav__link">Leaderboard</a></li>
@@ -37,13 +37,17 @@
 
   <main class="homepage">
     <section class="homepage__hero">
-      <h1 class="homepage__title">Welcome To <span>TriviaBoost</span></h1>
-      <p class="homepage__subtitle">Test your knowledge in math, science, history, programming and more!</p>
-      <a href="#" class="homepage__button"><i class="bi bi-play-fill"></i>Play Quiz</a>
+      <div class="homepage__hero__content">
+        <h1 class="homepage__title">Welcome To <span>TriviaBoost</span></h1>
+        <p class="homepage__subtitle">Test your knowledge in math, science, history, programming and more!</p>
+        <button class="homepage__button"><a href="#">Start practicing</a></button>
+      </div>
+    </section>
+
+    <section class="about__hero">
+      <h1>about</h1>
     </section>
   </main>
-  <div></div>
-  <div></div>
 
   <script type="module" src="src/main.js"></script>
 </body>
