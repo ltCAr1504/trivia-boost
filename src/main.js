@@ -9,24 +9,6 @@ const dropDownBox = document.querySelector('.nav__dropdown-menu')
 
 
 
-navbar.addEventListener('mouseenter', () => {
-  navbar.style.backgroundColor = colorGrayBlack
-  navbar.style.borderColor = colorGrayBlack
-  dropDownLink.style.color = 'white'
-  links.forEach(l => {
-    l.style.color = 'white'
-  });
-})
-
-
-navbar.addEventListener('mouseleave', () => {
-  navbar.style.backgroundColor = ''
-  navbar.style.borderColor = ''
-  dropDownLink.style.color = ''
-  links.forEach(l => {
-    l.style.color = ''
-  })
-})
 
 dropDownLink.addEventListener('mouseenter', () =>{
   navbar.style.borderBottomLeftRadius = '0px'
