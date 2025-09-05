@@ -18,7 +18,7 @@
   --color-yellow: gold;     
   --color-grayBlack: #2E2E3A;
   --color-green: #70e000;      
-  --color-white: #F5F5F5;      
+  --color-white: white;      
   --color-red: #FF4500;   
   --color-purple: #6f42c1; 
   
@@ -40,7 +40,8 @@ body{
 
 
 .header{
-  padding: 2rem 3rem;
+  padding: 0 3rem;
+  height: 80px;
   display: grid;
   background-color: white;
   grid-template-columns: 1fr auto 1fr;
@@ -51,7 +52,7 @@ body{
 
 
 .header__logo .header__title {
-  font-size: 4em;
+  font-size: 3.5em;
   color: var(--color-blue);
   background: linear-gradient(90deg, #007BFF, var(--color-green));
   background-clip: text;
@@ -67,9 +68,14 @@ body{
   
 }
 
+.nav__dropdown{
+  position: relative;
+}
+
 .navbar .nav__links, #nav__link{
   display: flex;
   align-items: center;
+  gap: 60px;
   font-family: 'Raleway';
   height: 100%;
   font-size: 1em;
@@ -77,18 +83,83 @@ body{
   font-weight: bold;
 }
 
+#nav__link{
+  position: relative;
+}
+
+#nav__link::after{
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  border-radius: 5px;
+  inset: -10px;
+  z-index: -1;
+}
+
+#nav__link:hover::after{
+  background-color: rgba(0,0,0,.1)
+}
+
 
 
 .navbar .nav__dropdown-menu{
-  display: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0.25rem 1rem 0 #282e3e1a;
+  border-radius: .5rem;
+  top: 45px;
+  left: 30px;
+}
+
+.navbar .nav__dropdown-menu li{
+  padding: 1rem 1.25rem;
+}
+
+.navbar .nav__dropdown-menu li:nth-child(1){
+  background-color: transparent;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  transition: .3s ease;
+}
+
+.navbar .nav__dropdown-menu li:nth-child(1):hover{
+  background-color: wheat;
+}
+
+.navbar .nav__dropdown-menu li{
+  background-color: wheat;
+}
+
+.navbar .nav__dropdown-menu li:nth-child(4){
+  background-color: wheat;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+
+.navbar .nav__dropdown-menu .dropdown__link{
+  font-family: 'Raleway';
+  color: var(--color-grayBlack);
 }
 
 .nav__dropdown #nav__dropdown__link{
   font-size: 1em;
   color: var(--color-grayBlack);
   font-family: 'Raleway';
+  display: flex;
+  align-items: center;
   font-weight: bold;
+  gap: 5px;
 
+}
+
+.nav__dropdown #nav__dropdown__link img{
+  height: auto;
+  display: flex;
+  align-self: baseline;
+  width: 15px;
+  rotate: -90deg;
 }
 
 
@@ -110,34 +181,22 @@ body{
   gap: 10px;
   justify-content: center;
   padding: 10px 4em;
-  border-radius: 5px;
+  border-radius: 4px;
   font-weight: bold;
   font-size: 1.1em;
-}
-
-
-
-
-.nav__register .btn__1{
-  background-color: var(--color-blue);
+  background: linear-gradient(90deg,var(--color-blue),var(--color-green));
   color: white;
   transition: .5s ease;
 }
 
 
-.nav__register .btn__1:hover{
-  background: var(--color-grayBlack)
-
-}
-
-
-
 .homepage{
-  height: 100vh
+  height: 100%;
+  padding-top: 80px;
 }
 
 .homepage .homepage__hero{
-  height: 550px;
+  height: 865px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -145,7 +204,6 @@ body{
 
 .homepage__hero__content{
   display: flex;
-  margin-top: 50px;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
@@ -155,7 +213,7 @@ body{
 .homepage .homepage__title{
   font-size: 8rem;
   font-family: 'Raleway';
-  color: #222;
+  color: var(--color-grayBlack);
 }
 
 .homepage .homepage__title span{
@@ -165,38 +223,36 @@ body{
 }
 
 .homepage .homepage__subtitle{
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: 'Raleway';
   color: #444;
 }
 
 .homepage .homepage__button{
-  font-size: 1em;
-  font-family: 'Raleway';
-  color: var(--color-blue);
+  font-size: 1.2em;
   font-weight: bold;
   border-radius: 30px;
-  background-color: var(--color-blue);
+  background: linear-gradient(90deg,var(--color-blue),var(--color-purple));
   margin-top: 20px;
   color: var(--color-white);
-  border: 2px solid var(--color-blue);
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: .5s ease;
+  padding: 15px 25px;
+  cursor: pointer;
 }
+
+
 
 .homepage .homepage__button a{
   font-size: 1.2em;
-  padding: 8px 15px;
   font-family: 'Raleway';
   color: var(--color-white);
 }
 
-.homepage__button:hover{
-  background-color: var(--color-grayBlack);
-  border: 2px solid var(--color-grayBlack);
-}
+
 
 .about__hero{
   height: 100vh;
@@ -221,8 +277,6 @@ body{
     padding: 0 20px;
   }
 
-  .homepage .homepage__hero{
-  }
 
   .homepage__hero .homepage__title{
     font-size: 6rem;
