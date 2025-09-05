@@ -103,6 +103,8 @@ body{
 
 
 
+
+
 .navbar .nav__dropdown-menu{
   display: flex;
   flex-direction: column;
@@ -179,9 +181,26 @@ body{
   display: flex;
   align-items: center;
   font-weight: bold;
+  position: relative;
   gap: 5px;
 
 }
+
+#nav__dropdown__link::after{
+  content: '';
+  position: absolute;
+  background-color: transparent;
+  border-radius: 5px;
+  inset: -10px;
+  z-index: -1;
+  transition: .3s ease;
+}
+
+#nav__dropdown__link:hover::after{
+  background-color: rgba(0,0,0,.1)
+}
+
+
 
 .nav__dropdown #nav__dropdown__link img{
   height: auto;
