@@ -120,18 +120,24 @@ body{
   padding: 1rem 1.25rem;
   background-color: transparent;
   transition: .3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
 }
 
 .navbar .nav__dropdown-menu li:nth-child(1){
   background-color: transparent;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
-  gap: 5px;
-  display: flex;
-  align-items: center;
 }
 
 .navbar .nav__dropdown-menu li:nth-child(1) img{
+  height: auto;
+  width: 30px;
+}
+
+.navbar .nav__dropdown-menu li:nth-child(2) img{
   height: auto;
   width: 30px;
 }
