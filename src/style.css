@@ -285,7 +285,7 @@ body{
 }
 
 .homepage .homepage__hero{
-  height: 865px;
+  height: 91%;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -343,14 +343,91 @@ body{
 
 
 
-
-.quiz__spotlight{
-  height: 100vh;
+.quiz__spotlight {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 20px;
 }
 
-.quiz__spotlight .quiz__spotlight__header{
+.quiz__spotlight .quiz__spotlight__header {
   font-size: 5rem;
   text-align: center;
+  font-family: 'Raleway';
+  background: linear-gradient(90deg, var(--color-blue), #ff6ec7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+.quiz__spotlight__content {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+
+  
+}
+
+.quiz__box {
+  width: 500px;
+  height: 350px;
+  border-radius: 3rem;
+  padding: 5px 5px;
+  color: white;
+  font-size: 1.2rem;
+  background: var(--color-grayBlack)
+}
+
+.box__content{
+  padding: 1.5rem 1.5rem;
+  border-radius: 3rem;
+  background-color: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.box__content p{
+  font-family: 'Raleway';
+  font-size: 1.1em;
+}
+
+.box__content .quiz__difficulty{
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+.box__content h3{
+  font-size: 1.7em;
+}
+
+.box__content .title{
+  font-family: 'Raleway';
+}
+
+.btn__quiz{
+  padding: .9em 100px;
+  border-radius: .7em;
+  margin-top: 12px;
+  outline: none;
+  border: none;
+  font-family: 'Raleway';
+  font-size: 1.1em;
+  font-weight: bold;
+  background: linear-gradient(90deg, var(--color-blue), var(--color-purple));
+  color: white;
+
 }
 
 
