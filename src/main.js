@@ -47,6 +47,11 @@ quizDifficulty.forEach(item => {
   }
 });
 
+const subjectColors = {
+  'math' : 'red',
+  'science': 'green'
+}
+
 
 
 
