@@ -1,4 +1,9 @@
 
+import { cardQuizzesData, subjectColors } from "../data/cardQuizzesData"
+
+console.log('cardQuizzesData:', cardQuizzesData);
+
+
 const navDropdown = document.querySelector('.nav__dropdown-menu')
 const dropdownLink = document.getElementById('nav__dropdown__link')
 const arrowIcon = document.getElementById('arrow__img')
@@ -47,12 +52,8 @@ quizDifficulty.forEach(item => {
   }
 });
 
-const subjectColors = {
-  'math' : 'red',
-  'science': 'green'
-}
 
-
+console.log(cardQuizzesData)
 
 
 
