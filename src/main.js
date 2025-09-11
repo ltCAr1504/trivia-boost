@@ -1,7 +1,7 @@
 
-import { cardQuizzesData, subjectColors } from "../data/cardQuizzesData"
+import { cardQuizzesData, subjectColors } from "./data/cardQuizzesData.js"
 
-console.log('cardQuizzesData:', cardQuizzesData);
+
 
 
 const navDropdown = document.querySelector('.nav__dropdown-menu')
@@ -53,9 +53,27 @@ quizDifficulty.forEach(item => {
 });
 
 
-console.log(cardQuizzesData)
 
+function createQuizCards() {
+  const quizContainer = document.getElementById('quiz__container');
+  cardQuizzesData.forEach(quizInfo, index => {
+    const card = `<div class="quiz__box">
+          <div class="box__content">
+            <div class="info">
+              <h3 class= 'title'>${quizInfo.title}</h3>
+              <p class = 'questions__quantity'>Questions: <span>${quizInfo.questionsQuantity}</span></p>
+              <p>Difficulty: <span class="quiz__difficulty">${quizInfo.difficulty}</span></p>
+              <button class="btn__quiz">Start Quiz</button>
+            </div>
+            <div class="box__img">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+    `
+  })
 
+}
 
 
 
