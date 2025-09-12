@@ -1,5 +1,5 @@
 
-import { cardQuizzesData, subjectColors } from "./data/cardQuizzesData.js"
+import {cardQuizzesData} from "./data/cardQuizzesData.js"
 
 
 
@@ -39,41 +39,56 @@ document.addEventListener('click', (e) => {
 })
 
 
-const colors = {
-  'Easy': '#2ecc71',   // verde
-  'Medium': '#f1c40f', // amarillo
-  'Hard': '#e74c3c'    // rojo
-};
 
-quizDifficulty.forEach(item => {
-  const difficulty = item.textContent;
-  if(colors[difficulty]){
-    item.style.color = colors[difficulty];
-  }
-});
 
 
 
 function createQuizCards() {
-  const quizContainer = document.getElementById('quiz__container');
-  cardQuizzesData.forEach(quizInfo, index => {
-    const card = `<div class="quiz__box">
-          <div class="box__content">
-            <div class="info">
-              <h3 class= 'title'>${quizInfo.title}</h3>
-              <p class = 'questions__quantity'>Questions: <span>${quizInfo.questionsQuantity}</span></p>
-              <p>Difficulty: <span class="quiz__difficulty">${quizInfo.difficulty}</span></p>
-              <button class="btn__quiz">Start Quiz</button>
-            </div>
-            <div class="box__img">
-              <img src="" alt="">
-            </div>
-          </div>
-        </div>
-    `
-  })
+  const quizContainer = document.querySelector('.quiz__spotlight__content');
+  quizContainer.innerHTML = ''; 
 
+  const colors = {
+    'Easy': '#2ecc71',   // verde
+    'Medium': '#f1c40f', // amarillo
+    'Hard': '#e74c3c'    // rojo
+  };
+
+  cardQuizzesData.forEach((quizInfo, index) => {
+    const card = document.createElement('div');
+    card.classList.add('quiz__box');
+
+    card.innerHTML = `
+      <div class="box__content">
+        <div class="info">
+          <h3 class="title">${quizInfo.title}</h3>
+          <p class="questions__quantity">Questions: <span>${quizInfo.questionsQuantity}</span></p>
+          <p>Difficulty: <span class="quiz__difficulty">${quizInfo.difficulty}</span></p>
+          <button class="btn__quiz">Start Quiz</button>
+        </div>
+        <div class="box__img">
+          <img src="" alt="">
+        </div>
+      </div>
+    `;
+
+    // 👉 Ahora puedes acceder al span.quiz__difficulty dentro del card
+    const difficultySpan = card.querySelector('.quiz__difficulty');
+    const difficulty = quizInfo.difficulty;
+
+    if (colors[difficulty]) {
+      difficultySpan.style.color = colors[difficulty];
+    }
+
+    quizContainer.appendChild(card); // ✅ agrega la tarjeta al DOM
+  });
 }
+
+
+
+
+
+
+createQuizCards()
 
 
 

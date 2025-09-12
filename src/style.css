@@ -388,20 +388,8 @@ body{
   transition: .3s ease;
   position: relative;
   z-index: initial;
+  background: var(--color-blue)
 }
-
-.quiz__box::after{
-  content: '';
-  position: absolute;
-  inset: -8px;
-  width: calc(100% + 16px);
-  height: calc(100% + 36px);
-  border-radius: 2em;
-  background-color: var(--color-grayBlack);
-  z-index: -1;
-
-}
-
 
 
 
@@ -421,13 +409,13 @@ body{
   font-family: 'Raleway';
   font-size: 1.1em;
   font-weight:500;
-  color: var(--color-grayBlack);
+  color: var(--color-white)
 }
 
 .box__content .questions__quantity span{
   font-family: 'Raleway';
   font-weight: bold;
-  color: var(--color-grayBlack);
+  color: var(--color-white);
 }
 
 .box__content .quiz__difficulty{
@@ -437,7 +425,7 @@ body{
 
 .box__content h3{
   font-size: 1.4em;
-  color: var(--color-grayBlack);
+  color: var(--color-white);
 }
 
 .box__content .title{
@@ -454,11 +442,10 @@ body{
   font-family: 'Raleway';
   font-size: 1.1em;
   font-weight: bold;
-  background: var(--color-grayBlack);
+  background: var(--color-green);
   color: white;
-  border: 1px solid hsl(0,0%,100%,0.3);
   transition: .1s ease;
-  box-shadow: 0 5px 0 rgba(0,0,0,.65);
+  box-shadow: 0 5px 0 rgba(112,224,0,.9);
 
 }
 

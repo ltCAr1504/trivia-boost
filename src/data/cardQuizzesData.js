@@ -12,14 +12,8 @@ export const cardQuizzesData = [{
     'title': 'Javascript Fudamentals',
     'questionsQuantity': '10',
     'difficulty': 'Medium',
-    'id': 'Math'
+    'id': 'programming'
 }]
 
 
 
-export const subjectColors = {
-  'math' : 'red',
-  'science': 'green',
-  'programming': 'blue',
-  'history': 'yellow'
-}
