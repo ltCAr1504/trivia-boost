@@ -322,13 +322,13 @@ body{
 .features__grid {
   width: 1300px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  grid-auto-rows: 250px; /* altura de cada fila */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: 250px;
   background: radial-gradient(circle, var(--color-blue), var(--color-green));
   border-radius: 1.8em;
   margin: 0 auto;
   margin-top: 3rem;
-  gap: 1.8rem; /* 🔥 único espacio entre cajas */
+  gap: 1.8rem; 
   padding: 2rem;
 }
 
@@ -342,7 +342,7 @@ body{
   font-weight: bold;
 }
 
-.feature 1{
+.feature1{
 
 }
 
