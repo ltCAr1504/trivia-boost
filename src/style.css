@@ -60,12 +60,14 @@ body{
   position: fixed;
   gap: 35px;
   width: 100%;
+  z-index: 999 !important;
   background-color: var(--color-white);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 
 .header__logo .header__title {
-  font-size: 2.5em;
+  font-size: 3em;
   background: linear-gradient(90deg, var(--color-blue), var(--color-green));
   font-family: 'Dancing Script', cursive;
   background-clip: text;
@@ -90,13 +92,17 @@ body{
 .info{
   display: flex;
   gap: 35px;
+  background-color: var(--color-blueDark);
+  padding: 15px 3rem;
+  border-radius: 1.8em;
+  z-index: inherit;
 }
 
 .info a{
   font-family: 'Mona Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-blueDark);
+  color: var(--color-white);
   transition: .25s ease;
   display: flex;
   gap: 16px;
@@ -117,6 +123,7 @@ body{
   display: flex;
   align-items: center;
   position: relative;
+  z-index: inherit;
 }
 
 .icon__wrapper::after{
@@ -155,7 +162,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: transform, box-shadow; 
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
 }
 
 .register__section .btn__login:hover{
@@ -189,7 +196,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: transform, box-shadow; 
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
 }
 
 .register__section .btn__signup:hover{
@@ -287,8 +294,9 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
   will-change: transform, box-shadow; 
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
 }
 
 .homepage .homepage__button:hover{
@@ -372,9 +380,6 @@ body{
   font-weight: bold;
 }
 
-.feature1{
-
-}
 
 
 
