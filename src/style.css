@@ -150,11 +150,23 @@ body{
     0 4px 0 0 #3B82F6,  
     0 6px 0 0 #2563EB,   
     0 8px 0 0 #1D4ED8,   
-    0 8px 16px 0 rgba(59, 130, 246, 0.5); 
+    0 8px 16px 0 rgba(59, 130, 246, 0.5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform, box-shadow; 
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .register__section .btn__login:hover{
-  filter: brightness(.9);
+  transform: translateY(4px);
+   box-shadow:
+    inset 0 1px 0 0 rgba(255,255,255,0.4),
+    0 1px 0 0 #60A5FA,
+    0 2px 0 0 #3B82F6,
+    0 3px 0 0 #2563EB,
+    0 4px 0 0 #1D4ED8,
+    0 4px 8px 0 rgba(59,130,246,0.5);
 }
 
 
@@ -173,11 +185,25 @@ body{
     0 8px 16px 0 rgba(34, 197, 94, 0.5); 
   padding: 10px 50px;
   border-radius: 2.1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform, box-shadow; 
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .register__section .btn__signup:hover{
-  filter: brightness(.9);
+  transform: translateY(4px);
+   box-shadow:
+    inset 0 1px 0 0 rgba(255,255,255,0.4),
+    0 1px 0 0 #4ADE80,
+    0 2px 0 0 #22C55E,
+    0 3px 0 0 #16A34A,
+    0 4px 0 0 #15803D,
+    0 4px 8px 0 rgba(34,197,94,0.5);
 }
+
+
 
 
  
@@ -258,18 +284,22 @@ body{
     0 6px 0 0 #FF7A95,
     0 8px 0 0 #FF6B88,
     0 8px 16px 0 rgba(255, 77, 109, 0.5);
-  transition: .3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform, box-shadow; 
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .homepage .homepage__button:hover{
   transform: translateY(4px);
    box-shadow:
     inset 0 1px 0 0 rgba(255,255,255,0.4),
-    0 1px 0 0 #f472b6,
-    0 2px 0 0 #f43f5e,
-    0 3px 0 0 #e11d48,
-    0 4px 0 0 #be123c,
-    0 4px 8px 0 rgba(244,114,182,0.5);
+    0 1px 0 0 var(--color-rose),
+    0 2px 0 0 #FF1E50,
+    0 3px 0 0 #FF7A95,
+    0 4px 0 0 #FF6B88,
+    0 4px 8px 0 rgba(255,77,109,0.5);
 }
 
 
