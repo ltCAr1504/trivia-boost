@@ -169,7 +169,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: transform, box-shadow; 
-  transition: .15s ease;
+  transition: .2s ease;
 }
 
 .register__section .btn__signup:hover{
@@ -263,7 +263,7 @@ body{
   text-rendering: optimizeLegibility;
 
   will-change: transform, box-shadow; 
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .homepage .homepage__button:hover{
@@ -330,7 +330,7 @@ body{
   grid-template-columns: repeat(3, 1fr); 
   grid-auto-rows: 250px;
   background: var(--color-blueDark);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.09) 0px 64px 32px;
   border: 1px solid rgba(255,255,255,.5);
   border-radius: 1.8em;
   margin: 0 auto;
@@ -531,7 +531,7 @@ body{
   height: 800px;
   margin: 0 auto;
   background-color: var(--color-white);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   margin-top: 32px;
   border-radius: 1.8rem;
 }
@@ -551,6 +551,20 @@ body{
 .contact__container .main__contact__img h1{
   font-family: 'Poppins';
   font-size: 64px;
+}
+
+.contact__container .contact__form{
+  padding: 64px 32px;
+  width: 50%;
+  border-top-right-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+  background-color: var(--color-white)
+}
+
+.contact__container .contact__form__title{
+  font-size: 64px;
+  color: var(--color-blueDark);
+  font-family: 'Poppins';
 }
 
 
