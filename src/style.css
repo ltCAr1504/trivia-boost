@@ -32,7 +32,9 @@
   --color-red: #FF4500;   
   --color-purple: #6f42c1; 
   --color-rose: #FF6EC7;
-  
+  --color-green-aqua: #00EA9C;
+  --color-electric-blue: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
+
   
   --color-background: white;
   --color-primary: var(--color-blue);
@@ -68,11 +70,12 @@ body{
 
 .header__logo .header__title {
   font-size: 2.5em;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green));
+  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
   font-family: 'Dancing Script', cursive;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+
 
 }
 
@@ -149,11 +152,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: brightness;
-  transition: .15s ease;
 }
 
 .register__section .btn__login:hover{
-  background-color: var(--color-rose);
+  background: var(--color-electric-blue)
 }
 
 
@@ -169,11 +171,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: transform, box-shadow; 
-  transition: .2s ease;
 }
 
 .register__section .btn__signup:hover{
-  background-color: var(--color-rose);
+  background: var(--color-electric-blue)
 }
 
 
@@ -220,7 +221,7 @@ body{
 .homepage .homepage__title span{
   font-size: 125px;
   align-self: center;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green));
+  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
   font-family: 'Dancing Script', cursive;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -287,7 +288,7 @@ body{
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .features__header .features__title{
@@ -400,7 +401,7 @@ body{
 }
 
 .feature h3{
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green));
+  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
@@ -493,7 +494,7 @@ body{
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .contact__header .contact__title{
@@ -532,37 +533,50 @@ body{
   margin: 0 auto;
   background-color: var(--color-white);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  margin-top: 32px;
+  margin-top: 40px;
   border-radius: 1.8rem;
 }
 
 .contact__container .main__contact__img{
-  width: 50%;
+  width: 60%;
+  position: relative;
+}
+
+.contact__container .main__contact__img img{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+
+  border-bottom-left-radius: 1.8rem;
+  border-top-left-radius: 1.8rem;
 }
 
 .contact__container .main__contact__img .contact__img__title{
   display: flex;
   flex-direction: column;
-  padding-left: 64px;
+  padding-left: 80px;
   justify-content: center;
   height: 100%;
 }
 
 .contact__container .main__contact__img h1{
   font-family: 'Poppins';
-  font-size: 64px;
+  font-size: 88px;
+  z-index: 1;
+  color: white;
 }
 
 .contact__container .contact__form{
-  padding: 64px 32px;
-  width: 50%;
+  padding-top: 64px;
+  padding-left: 48px;
+  width: 40%;
   border-top-right-radius: 1.8rem;
   border-bottom-right-radius: 1.8rem;
   background-color: var(--color-white)
 }
 
 .contact__container .contact__form__title{
-  font-size: 64px;
+  font-size: 56px;
   color: var(--color-blueDark);
   font-family: 'Poppins';
 }
