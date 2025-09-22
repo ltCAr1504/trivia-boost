@@ -101,10 +101,25 @@
         </div>
         <form class="contact__form">
           <h2 class="contact__form__title">Send a message</h2>
-          <input type="text" placeholder="Your Name" class="contact__input" required>
-          <input type="email" placeholder="Your Email" class="contact__input" required>
-          <textarea placeholder="Your Message" class="contact__textarea" required></textarea>
-          <button type="submit" class="contact__button">Summit</button>
+          <div class="contact-groups">
+            <div class="input__group1">
+              <div class="input1">
+                <label for="">First name</label>
+                <input type="text" placeholder="First name" class="contact__input" required>
+              </div>
+              <div class="input2">
+                <label for="">Last name</label>
+                <input type="text" placeholder="Last name" class="contact__input" require>
+              </div>
+            </div>
+            <div class="input__group2">
+              <div class="input1">
+                <input type="email" placeholder="Email" class="contact__input" required>
+              </div>
+              <textarea placeholder="Your Message" class="contact__textarea" required></textarea>
+              <button type="submit" class="contact__button">Summit</button>
+            </div>            
+          </div>
         </form>
       </div>
     </section>
