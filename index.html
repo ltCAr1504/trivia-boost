@@ -109,16 +109,21 @@
               </div>
               <div class="input2">
                 <label for="">Last name</label>
-                <input type="text" placeholder="Last name" class="contact__input" require>
+                <input type="text" placeholder="Last name" class="contact__input" required>
               </div>
             </div>
             <div class="input__group2">
               <div class="input1">
-                <input type="email" placeholder="Email" class="contact__input" required>
+                <label for="">Email</label>
+                <input type="email" id="email" placeholder="Email" class="contact__input" required>
               </div>
-              <textarea placeholder="Your Message" class="contact__textarea" required></textarea>
-              <button type="submit" class="contact__button">Summit</button>
-            </div>            
+              <div class="input2">
+                <label for="">Message</label>
+                <textarea placeholder="Your Message" class="contact__input textarea" required></textarea>
+              </div>
+            </div>
+            
+            <button type="submit" class="contact__btn">Summit</button>
           </div>
         </form>
       </div>
