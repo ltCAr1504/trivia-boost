@@ -121,7 +121,7 @@ body{
   background-color: var(--color-blueDark);
   bottom: -8px;
   border-radius: 8px;
-  transition: width .35s ease;
+  transition: width .25s ease;
 }
 
 .info a:hover::after{
@@ -148,7 +148,7 @@ body{
   display: flex;
   align-items: center;
   font-weight: 600;
-  padding: 8px 40px;
+  padding: 8px 32px;
   border-radius: 2.1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -158,7 +158,7 @@ body{
 }
 
 .register__section .btn__login:hover{
-  background: var(--color-blueDark2)
+  opacity: 85%;
 }
 
 
@@ -168,7 +168,7 @@ body{
   background-color: var(--color-blueDark);
   color: white;
   font-weight: 600;
-  padding: 8px 48px;
+  padding: 8px 40px;
   border-radius: 2.1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -178,7 +178,7 @@ body{
 }
 
 .register__section .btn__signup:hover{
-  background: var(--color-blueDark2)
+  opacity: 85%;
 }
 
 
@@ -323,7 +323,7 @@ body{
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: var(--color-rose);
+  background: linear-gradient(90deg,var(--color-blue),var(--color-green-aqua));
   border-radius: 2px;
   z-index: -1;
 
@@ -335,7 +335,6 @@ body{
   grid-template-columns: repeat(3, 1fr); 
   grid-auto-rows: 250px;
   background: var(--color-blueDark);
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 32px 16px, rgba(0, 0, 0, 0.09) 0px 64px 32px;
   border: 1px solid rgba(255,255,255,.5);
   border-radius: 1.8em;
   margin: 0 auto;
@@ -524,7 +523,7 @@ body{
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: var(--color-rose);
+  background: linear-gradient(90deg,var(--color-blue),var(--color-green-aqua));
   border-radius: 2px;
   z-index: -1;
 
@@ -687,7 +686,7 @@ body{
 }
 
 .contact__btn:hover{
-  background-color: var(--color-blueDark2)
+  opacity: 85%;
 }
 
 
