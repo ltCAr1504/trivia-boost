@@ -24,16 +24,18 @@
 
 :root {
   
-  --color-blue: #007BFF;       
+  --color-blue: #007BFF;
+  --color-blue2: #0000ff;       
   --color-yellow: gold;     
   --color-blueDark: #0d0c22;
+  --color-blueDark2: #0A091B;
   --color-green: #70e000;      
   --color-white: white;      
   --color-red: #FF4500;   
   --color-purple: #6f42c1; 
   --color-rose: #FF6EC7;
   --color-green-aqua: #00EA9C;
-  --color-electric-blue: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
+  --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
   
   --color-background: white;
@@ -70,7 +72,7 @@ body{
 
 .header__logo .header__title {
   font-size: 2.5em;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
+  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua),var(--color-blue2));
   font-family: 'Dancing Script', cursive;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -116,7 +118,7 @@ body{
   position: absolute;
   width: 0%;
   height: 3px;
-  background-color: var(--color-rose);
+  background-color: var(--color-blueDark);
   bottom: -8px;
   border-radius: 8px;
   transition: width .35s ease;
@@ -152,10 +154,11 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: brightness;
+  transition: .1s ease;
 }
 
 .register__section .btn__login:hover{
-  background: var(--color-electric-blue)
+  background: var(--color-blueDark2)
 }
 
 
@@ -171,10 +174,11 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: transform, box-shadow; 
+  transition: .1s ease;
 }
 
 .register__section .btn__signup:hover{
-  background: var(--color-electric-blue)
+  background: var(--color-blueDark2)
 }
 
 
@@ -221,7 +225,7 @@ body{
 .homepage .homepage__title span{
   font-size: 125px;
   align-self: center;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
+  background: linear-gradient(90deg, var(--color-blue),var(--color-green-aqua));
   font-family: 'Dancing Script', cursive;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -532,26 +536,21 @@ body{
   height: 800px;
   margin: 0 auto;
   background-color: var(--color-white);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px,rgba(60, 64, 67, 0.15) 1px 0px 3px 1px  ;
   margin-top: 40px;
   border-radius: 1.8rem;
 }
 
-.contact__container .main__contact__img{
+.contact__container .contact__title{
   width: 60%;
   position: relative;
-}
-
-.contact__container .main__contact__img img{
-  width: 100%;
-  position: absolute;
-  height: 100%;
-
-  border-bottom-left-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
+  border-bottom-left-radius: 1.8rem;
+
 }
 
-.contact__container .main__contact__img .contact__img__title{
+
+.contact__container .contact__title .title{
   display: flex;
   flex-direction: column;
   padding-left: 80px;
@@ -559,12 +558,11 @@ body{
   height: 100%;
 }
 
-.contact__container .main__contact__img h1{
-  font-family: 'Poppins';
-  font-size: 88px;
-  z-index: 1;
-  color: white;
+.contact__container .contact__title .title img{
+  height: auto;
+  width: 650px;
 }
+
 
 .contact__container .contact__form{
   padding-top: 64px;
@@ -578,7 +576,10 @@ body{
 
 .contact__container .contact__form__title{
   font-size: 56px;
-  color: var(--color-blueDark);
+  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: 'Poppins';
   margin-bottom: 56px;
 }
@@ -648,6 +649,10 @@ body{
   font-weight: 600;
 }
 
+.textarea{
+  resize: none;
+  height: 200px;
+}
 
 
 .contact__input{
@@ -677,9 +682,13 @@ body{
   outline: none;
   border-radius: 1.8rem;
   font-weight: bold;
-  background-color: var(--color-rose);
+  background-color: var(--color-blueDark);
+  transition: .15s ease;
 }
 
+.contact__btn:hover{
+  background-color: var(--color-blueDark2)
+}
 
 
 @media (max-width: 1750px) {
