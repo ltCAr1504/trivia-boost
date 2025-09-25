@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bitcount+Grid+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 *{
   margin: 0;
@@ -29,6 +29,7 @@
   --color-yellow: gold;     
   --color-blueDark: #0d0c22;
   --color-blueDark2: #0A091B;
+  --color-gray: #7b7194;
   --color-green: #70e000;      
   --color-white: white;      
   --color-red: #FF4500;   
@@ -113,12 +114,16 @@ body{
   position: relative;
 }
 
+.info a:hover{
+  color: #7b7194;
+}
+
 .info a::after{
   content: '';
   position: absolute;
   width: 0%;
   height: 3px;
-  background-color: var(--color-blueDark);
+  background-color: var(--color-gray);
   bottom: -8px;
   border-radius: 8px;
   transition: width .25s ease;
@@ -158,7 +163,7 @@ body{
 }
 
 .register__section .btn__login:hover{
-  opacity: 85%;
+  background-color: var(--color-gray);
 }
 
 
@@ -178,7 +183,7 @@ body{
 }
 
 .register__section .btn__signup:hover{
-  opacity: 85%;
+  background-color: var(--color-gray);
 }
 
 
@@ -211,9 +216,10 @@ body{
 
 
 .homepage .homepage__title{
-  font-size: 128px;
+  font-size: 140px;
   font-family: 'Raleway', sans-serif;
   line-height: 1;
+  letter-spacing: -1px;
   gap: 24px;
   display: flex;
   text-align: left;
@@ -237,7 +243,8 @@ body{
 }
 .homepage .homepage__subtitle{
   font-size: 1.5rem;
-  font-family: 'Mona Sans';;
+  font-family: 'Poppins';
+  font-weight: 400;
   color: var(--color-blueDark);
 }
 
@@ -531,8 +538,8 @@ body{
 
 .contact__container{
   display: flex;
-  width: 1400px;
-  height: 800px;
+  width: 1250px;
+  height: 650px;
   margin: 0 auto;
   background-color: var(--color-white);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px,rgba(60, 64, 67, 0.15) 1px 0px 3px 1px  ;
@@ -541,53 +548,61 @@ body{
 }
 
 .contact__container .contact__title{
-  width: 60%;
+  width: 50%;
   position: relative;
   border-top-left-radius: 1.8rem;
   border-bottom-left-radius: 1.8rem;
+}
 
+.contact__container .contact__title .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__container .contact__title .logo img{
+  width: 350px;
+  height: auto;
 }
 
 
-.contact__container .contact__title .title{
+.contact__container .contact__title{
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
   justify-content: center;
   height: 100%;
 }
 
-.contact__container .contact__title .title img{
-  height: auto;
-  width: 650px;
+.contact__container .contact__title .title h1{
+  font-size: 4rem;
+  font-family: 'Poppins';
+  color: var(--color-blueDark);
 }
 
-
 .contact__container .contact__form{
-  padding-top: 64px;
+  padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
-  width: 40%;
+  width: 50%;
   border-top-right-radius: 1.8rem;
   border-bottom-right-radius: 1.8rem;
   background-color: var(--color-white)
 }
 
 .contact__container .contact__form__title{
-  font-size: 56px;
+  font-size: 48px;
   background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
-
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Poppins';
-  margin-bottom: 56px;
+  margin-bottom: 32px;
 }
 
 
 .contact-groups{
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
 }
 
 .input__group1{
@@ -597,6 +612,7 @@ body{
 
 .input__group1 .input1{
   display: flex;
+  width: 50%;
   flex-direction: column;
   gap: 8px;
 }
@@ -609,6 +625,7 @@ body{
 
 .input__group1 .input2{
   display: flex;
+  width: 50%;
   flex-direction: column;
   gap: 8px;
 }
@@ -650,7 +667,7 @@ body{
 
 .textarea{
   resize: none;
-  height: 200px;
+  height: 100px;
 }
 
 
@@ -675,6 +692,7 @@ body{
 .contact__btn{
   padding: 16px 16px;
   font-size: 1.1em;
+  margin-top: 16px;
   font-family: 'Mona Sans';
   color: white;
   border: none;
@@ -686,7 +704,7 @@ body{
 }
 
 .contact__btn:hover{
-  opacity: 85%;
+  background-color: var(--color-gray);
 }
 
 
