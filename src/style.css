@@ -591,9 +591,7 @@ body{
 
 .contact__container .contact__form__title{
   font-size: 48px;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green-aqua));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-blueDark);
   font-family: 'Poppins';
   margin-bottom: 32px;
 }
@@ -706,6 +704,8 @@ body{
 .contact__btn:hover{
   background-color: var(--color-gray);
 }
+
+
 
 
 @media (max-width: 1750px) {
