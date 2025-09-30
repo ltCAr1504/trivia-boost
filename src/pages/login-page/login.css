@@ -67,7 +67,7 @@ body{
 .login__container .logo h1{
     font-size: 1.25rem;
     font-family: 'Poppins';
-    font-weight: 600;
+    font-weight: 500;
     color: var(--color-blueDark);
 }
 

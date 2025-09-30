@@ -83,7 +83,7 @@ body{
 .header__logo{
   display:flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 
 }
 
@@ -124,7 +124,7 @@ body{
 .info a{
   font-family: 'Mona Sans', sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-blueDark);
   transition: .25s ease;
   display: flex;
@@ -160,7 +160,7 @@ body{
 .register__section{
   display: flex;
   justify-content: end;
-  gap: 16px;
+  gap: 8px;
 }
 
 
@@ -195,7 +195,7 @@ body{
   color: white;
   font-weight: 500;
   box-shadow: inset 0 0 2px rgba(255,255,255,1);
-  padding: 8px 40px;
+  padding: 8px 32px;
   border-radius: 2.1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -295,7 +295,7 @@ body{
 
 
 .features{
-  height: 115vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -431,9 +431,7 @@ body{
 }
 
 
-box3{
-  gap: 15%;
-}
+
 
 
 
@@ -442,8 +440,9 @@ box3{
 
 
 .contact{
-  height: 100%;
+  min-height: 100vh;
   position: relative;
+  margin-top: 80px;
 }
 
 .contact__header{
@@ -649,35 +648,24 @@ box3{
 
 
 
-@media (max-width: 1750px) {
+@media (max-width: 1750px){
   .header{
-    padding: .5em 2rem;
+    padding: 0 125px;
   }
 
-  .header__logo .header__title{
-    font-size: 3rem;
+  .header .header__logo .header__title{
+    font-size: 1.9rem;
   }
 
-  .navbar .nav__links{
-    gap: 65px;
+  .header .header__logo img{
+    width: 28px;
+    height: 28px;
   }
 
-
-
-
-  .homepage__hero .homepage__title{
-    font-size: 4rem;
+  .header .info a{
+    font-size: .9rem;
   }
 
-  .homepage__hero .homepage__subtitle{
-    font-size: 1.2rem;
-  }
-
-  .homepage__hero .homepage__button{
-    padding: 17px 1.7rem;
-
-  }
-
+  
 }
-
 
