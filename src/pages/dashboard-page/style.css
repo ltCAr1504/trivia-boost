@@ -4,5 +4,33 @@
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.dashboard__container{
+    display: flex;
+    padding: 24px 24px;
+}
+
+.main__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__container{
+    width: 100px;
+}
+
+.sidebar__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
