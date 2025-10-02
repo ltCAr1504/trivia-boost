@@ -34,7 +34,7 @@
 body{
     height: 100vh;
     overflow: hidden;
-    background: var(--background-color);
+    background: linear-gradient(135deg,rgba(253, 199, 12, .1),rgba(251, 23, 248, .1));
     z-index: -1 !important;
     display: flex;
     align-items: center;
@@ -79,21 +79,26 @@ body{
     font-size: .8rem;
 }
 
+.sidebar ul li{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: .25s ease;
+}
+
+.sidebar ul li:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
 .sidebar ul li img{
     filter: invert(70%);
     position: relative;
 
 }
 
-.sidebar ul li img::after{
-    content: '';
-    position: absolute;
-    inset: -4px;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    background-color: black;
-
-}
 
 .main__dashboard{
     width: 100%;
