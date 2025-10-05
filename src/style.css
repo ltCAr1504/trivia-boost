@@ -47,8 +47,8 @@ img {
   --color-green-aqua: #00EA9C;
   --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
-  --box-shadow: 0 1px 4px 4px rgba(0, 0, 0, .4);
-  --color-background: f9fafb;
+  --box-shadow: 0 4px 8px 4px rgba(0, 0, 0, .3);
+  --color-background: #f9fafb;
   --color-primary: var(--color-blue);
   --color-button: var(--color-yellow);
   --color-success: var(--color-green);
@@ -260,6 +260,7 @@ body{
   font-family: 'Mona Sans';
   font-weight: 400;
   color: var(--color-blueDark);
+  filter: brightness(60%);
 }
 
 .homepage .homepage__button{
@@ -318,7 +319,8 @@ body{
   font-size: 22px;
   font-family: 'Mona Sans';
   font-weight:  400;
-  color: var(--color-blueDark2);
+  color: var(--color-blueDark);
+  filter: brightness(60%);
 }
 
 .features__header .features__label{
@@ -373,6 +375,7 @@ body{
   background-color: white;
   box-shadow: var(--box-shadow);
   border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.25);
 }
 
 .box__container .box2{
@@ -380,6 +383,7 @@ body{
   border-radius: 16px;
   box-shadow: var(--box-shadow);
   height: 100%;
+  border: 1px solid rgba(0,0,0,.25);
   background-color: white;
 }
 
@@ -390,11 +394,13 @@ body{
   box-shadow: var(--box-shadow);
   background-color: white;
   border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.25);
 }
 
 .box__container .box4{
   width: 700px;
   box-shadow: var(--box-shadow);
+  border: 1px solid rgba(0,0,0,.25);
   border-radius: 16px;
   height: 100%;
 
@@ -489,6 +495,7 @@ body{
   margin: 0 auto;
   background-color: var(--color-white);
   box-shadow: var(--box-shadow);
+  border: 1px solid rgba(0,0,0,.25);
   margin-top: 40px;
   border-radius: 1.8rem;
 }
@@ -617,6 +624,7 @@ body{
   width: 100%;
   border: none;
   box-shadow: var(--box-shadow);
+  border: 1px solid rgba(0,0,0,.25);
   color: var(--color-blueDark);
   font-size: 1rem;
   font-family: 'Mona Sans';
