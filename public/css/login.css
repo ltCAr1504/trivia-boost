@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+:root {
+  
+  --color-blue: #007BFF;
+  --color-blue2: #0000ff;       
+  --color-yellow: gold;     
+  --color-blueDark: #0d0c22;
+  --color-blueDark2: #0A091B;
+  --link-color: #0969da;
+  --color-gray: #7b7194;
+  --color-green: #70e000;      
+  --color-white: white;      
+  --color-red: #FF4500;   
+  --color-purple: #6f42c1; 
+  --color-rose: #FF6EC7;
+  --color-green-aqua: #00EA9C;
+  --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
+
+  
+  --color-background: white;
+  --color-primary: var(--color-blue);
+  --color-button: var(--color-yellow);
+  --color-success: var(--color-green);
+  --color-error: var(--color-red);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login__container{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 88px;
+}
+
+.login__container .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.login__container .logo img{
+    height: auto;
+    width: 48px;
+}
+
+.login__container .logo h1{
+    font-size: 1.25rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: var(--color-blueDark);
+}
+
+.inputs__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.input input{
+    width: inherit;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+
+.input .input__label{
+    font-family: 'Mona Sans';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input2 .input__label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input2 .input__label a{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--link-color);
+    text-decoration:none;
+}
+
+.input2 .input__label a:hover{
+    text-decoration: underline;
+}
+
+.btn__signin{
+    margin-top: 36px;
+    width: 100%;
+
+}
+
+.btn__signin .btn{
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    font-family: 'Mona Sans';
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-weight: 600;
+    color: white;
+    transition: .25s ease;
+    box-shadow: inset 0 0 2px rgba(255,255,255,1);
+    background-color: var(--color-blueDark);
+}
+
+.btn__signin .btn:hover{
+    background-color: var(--color-gray);
+}
