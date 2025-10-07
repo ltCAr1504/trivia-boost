@@ -371,17 +371,15 @@ body{
   width: 700px;
   height: 100%;
   background-color: white;
-  box-shadow: var(--box-shadow);
   border-radius: 16px;
-  border: 1px solid rgba(0,0,0,.25);
+  border: 1px solid rgb(224, 224, 224);
 }
 
 .box__container .box2{
   width: 700px;
   border-radius: 16px;
-  box-shadow: var(--box-shadow);
   height: 100%;
-  border: 1px solid rgba(0,0,0,.25);
+  border: 1px solid rgb(224, 224, 224);
   background-color: white;
 }
 
@@ -389,17 +387,15 @@ body{
 .box__container .box3{
   width: 700px;
   height: 100%;
-  box-shadow: var(--box-shadow);
   background-color: white;
   border-radius: 16px;
-  border: 1px solid rgba(0,0,0,.25);
+  border: 1px solid rgb(224, 224, 224);
 }
 
 .box__container .box4{
   width: 700px;
   background-color: white;
-  box-shadow: var(--box-shadow);
-  border: 1px solid rgba(0,0,0,.25);
+  border: 1px solid rgb(224, 224, 224);
   border-radius: 16px;
   height: 100%;
 
@@ -419,7 +415,7 @@ body{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
   padding-left: 1.5rem;
 }
 
@@ -493,8 +489,7 @@ body{
   height: 650px;
   margin: 0 auto;
   background-color: var(--color-white);
-  box-shadow: var(--box-shadow);
-  border: 1px solid rgba(0,0,0,.25);
+  border: 1px solid rgb(224, 224, 224);
   margin-top: 40px;
   border-radius: 1.8rem;
 }
