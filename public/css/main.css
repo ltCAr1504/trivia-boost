@@ -36,7 +36,7 @@ img {
   --color-blue: #36ffff;
   --color-blue2: #007bff;       
   --color-yellow: gold;     
-  --color-blueDark: #212529;
+  --color-blueDark: #1a1423;
   --color-blueDark2: #0A091B;
   --color-gray: #7b7194;
   --color-green: #70e000;      
@@ -368,7 +368,7 @@ body{
 
 .box__container .box1{
   width: 750px;
-  height: 90%;
+  height: 350px;
   background-color: white;
   border-radius: 16px;
   border: 1px solid rgb(224, 224, 224);
@@ -377,7 +377,7 @@ body{
 .box__container .box2{
   width: 700px;
   border-radius: 16px;
-  height: 90%;
+  height: 350px;
   border: 1px solid rgb(224, 224, 224);
   background-color: white;
 }
@@ -385,7 +385,7 @@ body{
 
 .box__container .box3{
   width: 700px;
-  height: 90%;
+  height: 350px;
   background-color: white;
   border-radius: 16px;
   border: 1px solid rgb(224, 224, 224);
@@ -396,7 +396,7 @@ body{
   background-color: white;
   border: 1px solid rgb(224, 224, 224);
   border-radius: 16px;
-  height: 90%;
+  height: 350px;
 
 }
 
