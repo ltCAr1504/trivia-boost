@@ -13,24 +13,25 @@
             <img src="../assets/img/trivia-boost-logo.svg" alt="">
             <h1>Sign in to TriviaBoost</h1>
         </div>
-        <form class="inputs__container">
+        <form id='login_form' class="inputs__container">
             <div class="input1 input">
                 <div class="input__label">
                     <label for="">Username or email adress</label>
                 </div>
-                <input type="text">
+                <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="input2 input">
                 <div class="input__label">
                     <label for="">Password</label>
                     <a href="#">Forgot password?</a>
                 </div>
-                <input type="text">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="btn__signin">
+                <button type='submit' class="btn">Sign in</button>
             </div>
         </form>
-        <div class="btn__signin">
-            <button class="btn">Sign in</button>
-        </div>
     </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>
