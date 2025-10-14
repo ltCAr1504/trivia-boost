@@ -9,15 +9,15 @@ exports.loginUser = async (req,res) => {
     const user = await User.findOne({ email })
     if(!user) return res.status(401).json({message: 'User not found'})
 
-    const validate = await bcrypt.compare(password, user.password)
-    if(!validate) return res.status(401).json({message: 'Wrong Password'})
+    const isPasswordValidate = await bcrypt.compare(password, user.password)
+    if(!isPasswordValidate) return res.status(401).json({message: 'Wrong Password'})
 
     const token = jwt.sign({userId: user._id}, procces.env.JWT_SECRET, {expiresIn: '1h'});
-    res.json({token})
+    return res.status(200).json({token})
   }
   catch(err) {
     console.error('Login Error', err)
-    res.status(500).json({message: 'Server Error'})
+    res.status(500).json({message: 'Internal server Error'})
   }
 
 }
@@ -28,15 +28,37 @@ exports.signupUser = async (req,res) => {
 
     try{
 
-        const userExists = User.findOne({email})
-        if(email) return res.status(400).json({message: 'The email you have provided is already associated with an account.'})
+      const [emailExists, usernameExists] = await Promise.all([
+        User.findOne({email}),
+        User.findOne({username})
+
+      ])
+
         
-        const passwordExists = User.findOne({password})
-        if(passwordExists) return res.status(400).json({message: 'Password already exists'})
+        if(emailExists) return res.status(400).json({message: 'The email you have provided is already associated with an account.'})
+        
+        if(usernameExists) return res.status(400).json({message: 'This username already exists'})
+        
+        const hashedPassword = await bcrypt.hash(password, 10)
+
+        const newUser = new User({
+          username,
+          email,
+          password: hashedPassword,
+        })
+
+        await newUser.save()
+        console.log('New user save')
+
+        const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, {
+          expiresIn: '1h',
+        });
+
+        return res.status(200).json({token})
 
     }
     catch(err) {
         console.err('Register Error',err)
+        res.status(500).json({message: 'Internal server Error'})
     }
-    res.status(500).json({message: 'Server Error'})
 }
