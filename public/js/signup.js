@@ -1,9 +1,20 @@
 const $ = (id) => document.getElementById(id)
+const errDiv = $('errDivContainer')
 
 $('form_container').addEventListener('submit', async (e) => {
     const email = e.target.email.value
     const password = e.target.password.value
-    const username = e.target.username.value
+    const username = e.target.password.value
+
+    const validateLengthPassword = password.length <= 8
+    if(!validateLengthPassword){
+        errDiv.textContent = 'Please enter a password with less than 8 characters'
+        setTimeout(() => errDiv.textContent = '', 4000)
+        return;
+    }
+
+
+    
 
     try{
         const res = await fetch('/api/signup', {
@@ -18,12 +29,15 @@ $('form_container').addEventListener('submit', async (e) => {
             localStorage.setItem('token', data.token)
             window.location.href = '/dashboard'
         } else {
-            
+            errDiv.textContent = data.message
+            setTimeout(() => errDiv.textContent = '', 4000);
         }
 
 
     }
     catch(err){
-        console.error('Login Error',err)
+        console.error('Login Error', err)
+        errDiv.textContent = 'Error connecting with the server!'
+        setTimeout(() => errDiv.textContent = '', 4000)
     }
 })
