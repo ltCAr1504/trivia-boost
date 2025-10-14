@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const app = express();
 const path = require('path');
@@ -5,12 +6,24 @@ const mongoose = require('mongoose')
 const pagesRoutes = require('./routes/pages.js')
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3000;
+const signupUser = require('./routes/auth.js')
+const loginUser = require('./routes/auth.js')
+
+
+app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.json())
+app.use(morgan('dev'))
 
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
 
-app.use(express.static(path.join(__dirname, '..', 'public')));
-app.use(morgan('dev'))
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('Connect to MongoDB Atlas'))
+  .catch(err => console.error('Connection Error!', err))
+
+
 app.use(pagesRoutes)
+app.use('/api', signupUser)
+app.use('/api', loginUser)
