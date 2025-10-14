@@ -28,6 +28,12 @@ exports.signupUser = async (req,res) => {
 
     try{
 
+        const userExists = User.findOne({email})
+        if(email) return res.status(400).json({message: 'The email you have provided is already associated with an account.'})
+        
+        const passwordExists = User.findOne({password})
+        if(passwordExists) return res.status(400).json({message: 'Password already exists'})
+
     }
     catch(err) {
         console.err('Register Error',err)
