@@ -4,18 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in to TriviaBoost</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="icon" href="../assets/img/trivia-boost-logo.svg" type="img/svg+xml">
 
 </head>
 <body>
     <div class="container">
-        <div class="singup__poster">
+        <div class="signup__poster">
             <img src="" alt="">
         </div>
         <div class="signup__container">
+            <div class="login__link">
+                <p>Already have a account?<a href="/login">Login</a></p>
+            </div>
             <form id="signup__form" class="signup__form">
-                <h1>Create your account</h1>
-                
+                <div class="title">
+                    <h1>Create your account</h1>
+                    <p>Explore all TriviaBoost features</p>
+                </div>
+                <div class="inputs__container">
+                    <div class="input">
+                        <label>Email</label>
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="input">
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="input">
+                        <label>Username</label>
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="create__account">
+                    <button class="create__account__btn" id="create__account__btn">Create account</button>
+                </div>
             </form>
         </div>
     </div>

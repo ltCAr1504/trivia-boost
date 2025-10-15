@@ -4,7 +4,7 @@ const errDiv = $('errDivContainer')
 $('form_container').addEventListener('submit', async (e) => {
     const email = e.target.email.value
     const password = e.target.password.value
-    const username = e.target.password.value
+    const username = e.target.username.value
 
     const validateLengthPassword = password.length <= 8
     if(!validateLengthPassword){

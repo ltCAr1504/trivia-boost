@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bitcount+Grid+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+:root {
+  
+    --color-blue: #36ffff;
+    --color-blue2: #007bff;       
+    --color-yellow: gold;     
+    --color-blueDark: #1a1423;
+    --color-blueDark2: #0A091B;
+    --color-gray: #7b7194;
+    --link-color: #0969da;
+    --color-green: #70e000;      
+    --color-white: white;      
+    --color-red: #FF4500;   
+    --color-purple: #6f42c1; 
+    --color-rose: #FF6EC7;
+    --color-green-aqua: #00EA9C;
+    --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
+  
+    --box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .3);
+    --color-background: #f9fafb;
+    --color-primary: var(--color-blue);
+    --color-button: var(--color-yellow);
+    --color-success: var(--color-green);
+    --color-error: var(--color-red);
+  }
+
+
+
+  body{
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--color-background);
+  }
+
+
+
+
+
+  .container{
+    display: flex;
+    height: 100vh;
+  }
+
+  .container .signup__poster{
+    height: 100%;
+    width: 50%;
+  }
+
+  
+
+  .container .signup__container{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .signup__container .login__link{
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.container .signup__container .login__link p{
+    font-family: 'Mona Sans';
+    font-size: 400;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 8px;
+}
+
+
+.container .signup__container .login__link p a{
+    color: var(--link-color);
+}
+
+.container .signup__container .login__link p a:hover{
+    text-decoration: underline;
+}
+
+.container .signup__form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container .signup__form .title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container .signup__form .title h1{
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+    color: var(--color-blueDark);
+    font-weight: 500;
+}
+
+.container .signup__form .title p{
+    font-size: 0.9rem;
+    font-family: 'Mona Sans';
+    font-weight: 500;
+    color: var(--color-gray);
+}
+
+.inputs__container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.inputs__container .input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs__container .input input{
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+
+.inputs__container .input label{
+    font-family: 'Mona Sans';
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+
+.create__account{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.create__account .create__account__btn{
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    background-color: var(--color-blueDark);
+    color: var(--color-white);
+    font-size: 1rem;
+    font-family: 'Mona Sans';
+    border-radius: 12px;
+    transition: .25s ease;
+    box-shadow: inset 0 0 2px rgba(255,255,255,1);
+    font-weight: 500;
+}
+
+.create__account__btn:hover{
+    background-color: var(--color-gray);
+}
+

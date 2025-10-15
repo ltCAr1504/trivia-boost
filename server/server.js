@@ -27,3 +27,6 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(pagesRoutes)
 app.use('/api', signupUser)
 app.use('/api', loginUser)
+app.use((req,res) => {
+  res.status(404).send('Page not found')
+})
