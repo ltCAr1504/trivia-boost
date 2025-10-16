@@ -6,8 +6,7 @@ const mongoose = require('mongoose')
 const pagesRoutes = require('./routes/pages.js')
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3000;
-const signupUser = require('./routes/auth.js')
-const loginUser = require('./routes/auth.js')
+const apiUsers = require('./routes/auth.js')
 
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
@@ -25,8 +24,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 app.use(pagesRoutes)
-app.use('/api', signupUser)
-app.use('/api', loginUser)
+app.use('/api', apiUsers)
 app.use((req,res) => {
   res.status(404).send('Page not found')
 })

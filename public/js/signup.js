@@ -1,15 +1,17 @@
 const $ = (id) => document.getElementById(id)
 const errDiv = $('errDivContainer')
 
-$('form_container').addEventListener('submit', async (e) => {
+$('signup__form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
     const email = e.target.email.value
     const password = e.target.password.value
     const username = e.target.username.value
 
-    const validateLengthPassword = password.length <= 8
-    if(!validateLengthPassword){
-        errDiv.textContent = 'Please enter a password with less than 8 characters'
-        setTimeout(() => errDiv.textContent = '', 4000)
+    const validateLengthPassword = password.length < 8;
+    if (validateLengthPassword) {
+        errDiv.textContent = 'Password must be at least 8 characters long';
+        setTimeout(() => (errDiv.textContent = ''), 4000);
         return;
     }
 
@@ -25,12 +27,16 @@ $('form_container').addEventListener('submit', async (e) => {
 
         const data = await res.json()
 
+        console.log(res.status)
+        console.log(data)
+
         if(res.ok){
             localStorage.setItem('token', data.token)
             window.location.href = '/dashboard'
         } else {
             errDiv.textContent = data.message
             setTimeout(() => errDiv.textContent = '', 4000);
+            console.log('Error!')
         }
 
 

@@ -1,4 +1,4 @@
-const { isAuthenticated } = require('../../server/routes/auth')
+const { isAuthenticated } = require('../../server/routes/auth.js')
 
 document.addEventListener("contextmenu", (e) => {
   e.preventDefault(); 
@@ -6,7 +6,7 @@ document.addEventListener("contextmenu", (e) => {
 
 
 if(isAuthenticated()){
-  return window.location.href('/dashboard')
+  window.location.href('/dashboard')
 }
 
 

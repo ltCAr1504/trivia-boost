@@ -1,7 +1,9 @@
 const $ = (id) => document.getElementById(id)
 const errDiv = $('errDivContainer')
 
-$('form_container').addEventListener('submit', async (e) => {
+$('login__form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
     const email = e.target.email.value
     const password = e.target.password.value
 
@@ -16,7 +18,7 @@ $('form_container').addEventListener('submit', async (e) => {
         const res = await fetch('/api/login', {
             method: 'POST',
             headers: {'Content-Type':'application/json'},
-            body: JSON.stringify({username,email,password})
+            body: JSON.stringify({email,password})
         })
 
         const data = await res.json()
