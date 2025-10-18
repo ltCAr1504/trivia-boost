@@ -10,6 +10,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bitcount+Grid+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 *{
   margin: 0;
@@ -21,10 +23,7 @@
   outline: none;
 }
 
-html{
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
-}
+
 
 img {
   pointer-events: none; 
@@ -122,10 +121,10 @@ body{
 }
 
 .info a{
-  font-family: 'Mona Sans', sans-serif;
-  font-size: 15px;
+  font-family: 'Figtree', sans-serif;
+  font-size: 16px;
   font-weight: 500;
-  color: var(--color-blueDark);
+  color: var(--color-gray);
   transition: .25s ease;
   display: flex;
   letter-spacing: -0.01em;
@@ -135,77 +134,40 @@ body{
 
 
 
-.info a::after{
-  content: '';
-  position: absolute;
-  width: 0%;
-  left: 50%;
-  transform: translate(-50%,0%);
-  height: 3px;
-  background: linear-gradient(90deg,var(--color-blue),var(--color-blue2));
-  bottom: -8px;
-  pointer-events: none;
-  border-radius: 8px;
-  transition: width .25s ease;
-}
-
-.info a:hover::after{
-  width: 100%;
-}
-
-
 
 
 
 .register__section{
   display: flex;
   justify-content: end;
-  gap: 12px;
+  gap: 16px;
 }
 
 
 
 .register__section .btn__login{
-  font-family: 'Mona Sans',sans-serif;
+  font-family: 'Figtree',sans-serif;
   font-size: 15px;
   background-color: var(--color-blueDark);
   color: white;
   display: flex;
   align-items: center;
+  border: none;
   font-weight: 500;
   padding: 8px 32px;
   border-radius: 12px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  box-shadow: inset 0 0 2px rgba(255,255,255,1);
-  will-change: brightness;
-  transition: .25s ease;
-}
-
-.register__section .btn__login:hover{
-  background-color: var(--color-gray);
 }
 
 
 .register__section .btn__signup{
-  font-family: 'Mona Sans', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 15px;
   background-color: var(--color-blueDark);
   color: white;
   font-weight: 500;
   padding: 8px 32px;
   border-radius: 12px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  box-shadow: inset 0 0 2px rgba(255,255,255,1);
-  will-change: transform, box-shadow; 
-  transition: .25s ease;
-}
-
-.register__section .btn__signup:hover{
-  background-color: var(--color-gray);
+  border: none;
 }
 
 
@@ -230,22 +192,25 @@ body{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
-
-
 .homepage .homepage__title{
-  font-size: 6rem;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
+  display: inline-block;
+  gap: 8px;
+  visibility: hidden;
+}
+
+.homepage .homepage__title span{
+  font-size: 4rem;
+  font-family: 'Figtree', sans-serif;
   font-weight: 400;
-  gap: 16px;
   color: var(--color-blueDark);
 }
 
 
 
-.homepage .homepage__title span{
+.homepage .homepage__title .logo__name span{
   font-size: 6rem;
   align-self: center;
   background: linear-gradient(90deg, var(--color-blue),var(--color-blue2 ));
@@ -257,15 +222,14 @@ body{
 
 .homepage .homepage__subtitle{
   font-size: 1.225rem;
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight: 400;
-  color: var(--color-blueDark);
-  filter: brightness(60%);
+  color: var(--color-gray);
 }
 
 .homepage .homepage__button{
-  font-size: 1rem;
-  margin-top: 26px;
+  font-size: 1.10rem;
+  margin-top: 16px;
   font-weight: 500;
   border-radius: 12px;
   display: flex;
@@ -280,7 +244,7 @@ body{
   justify-content: center;
   cursor: pointer;
   padding: 12px 24px;
-  font-family: 'Mona Sans', sans-serif;
+  font-family: 'Figtree', sans-serif;
   color: var(--color-white);
   gap: 8px;
   -webkit-font-smoothing: antialiased;
@@ -310,26 +274,26 @@ body{
 
 .features__header .features__title{
   font-size: 56px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Figtree', sans-serif;
   color: var(--color-blueDark);
   font-weight: 400;
 }
 
 .features__subtitle{
   font-size: 22px;
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight:  400;
-  color: var(--color-blueDark);
-  filter: brightness(60%);
+  color: var(--color-gray);
 }
 
 .features__header .features__label{
-  font-size: 16px;
-  font-family: 'Mona Sans', sans-serif;
+  font-size: 17px;
+  font-family: 'Figtree', sans-serif;
   display: flex;
-  font-weight: 600;
+  font-weight: 500;
   justify-content: center;
   position: relative;
+  color: var(--color-gray);
   z-index: -1;
   
 }
@@ -339,7 +303,7 @@ body{
   position: absolute;
   bottom: -10px;
   width: 60px;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg,var(--color-blue),var(--color-blue2));
   border-radius: 2px;
   z-index: -1;
@@ -422,14 +386,14 @@ body{
 }
 
 .box .box__content h1{
-  font-size:  32px;
-  font-family: 'Poppins';
+  font-size:  38px;
+  font-family: 'Figtree';
   font-weight: 400;
 }
 
 .box .box__content p{
   font-size: 1.1rem;
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight: 500;
   color: var(--color-gray);
 }
@@ -481,16 +445,17 @@ body{
 
 .contact__header .contact__title{
   font-size: 56px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 400;
   color: var(--color-blueDark);
 }
 
 .contact__header .contact__label{
-  font-size: 16px;
-  font-family: 'Mona Sans', sans-serif;
+  font-size: 17px;
+  font-family: 'Figtree', sans-serif;
   display: flex;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--color-gray);
   justify-content: center;
   position: relative;
   z-index: -1;
@@ -502,7 +467,7 @@ body{
   position: absolute;
   bottom: -10px;
   width: 60px;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg,var(--color-blue),var(--color-blue2));
   border-radius: 2px;
   z-index: -1;
@@ -558,7 +523,7 @@ body{
 .contact__container .contact__form__title{
   font-size: 48px;
   color: var(--color-blueDark);
-  font-family: 'Poppins';
+  font-family: 'Figtree';
   font-weight: 400;
   margin-bottom: 32px;
 }
@@ -584,7 +549,7 @@ body{
 
 .input__group1 .input1 label{
   color: var(--color-blueDark);
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight: 600;
 }
 
@@ -597,7 +562,7 @@ body{
 
 .input__group1 .input2 label{
   color: var(--color-blueDark);
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight: 600;
 }
 
@@ -615,7 +580,7 @@ body{
 }
 .input__group2 .input1 label{
   color: var(--color-blueDark);
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight: 600;
 }
 
@@ -626,7 +591,7 @@ body{
 }
 .input__group2 .input2 label{
   color: var(--color-blueDark);
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   font-weight: 600;
 }
 
@@ -646,7 +611,7 @@ body{
   border: 1px solid rgba(0,0,0,.25);
   color: var(--color-blueDark);
   font-size: 1rem;
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
 
 }
 
@@ -659,12 +624,13 @@ body{
   padding: 16px 16px;
   font-size: 1.1em;
   margin-top: 16px;
-  font-family: 'Mona Sans';
+  font-family: 'Figtree';
   color: white;
   border: none;
   outline: none;
-  border-radius: 1.8rem;
+  border-radius: 12px;
   font-weight: 500;
+  width: 45%;
   background-color: var(--color-blueDark);
   transition: .25s ease;
   box-shadow: inset 0 0 2px rgba(255,255,255,1);

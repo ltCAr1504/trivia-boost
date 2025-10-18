@@ -11,29 +11,29 @@
 <body>
   <header class="header">
     <div class="header__logo">
-      <img src="../assets/img/trivia-boost-logo.svg" alt="img" width="32" height="32" loading="lazy">
+      <img src="../assets/img/trivia-boost-logo.svg" alt="img" width="36" height="36" fetchpriority="high">
       <h1 class="header__title"><a href="#">TriviaBoost</a></h1>
     </div>
     <nav class="navbar">
       <div class="info">
-        <a href="#features">Features</a>
-        <a href="#">Explore</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#features" class="navItem">Features</a>
+        <a href="#" class="navItem">Explore</a>
+        <a href="#" class="navItem">About</a>
+        <a href="#" class="navItem">Contact</a>
       </div>
     </nav>
     <div class="register__section">
-        <a href="/login" class="btn__login">Login</a>
-        <a href="/signup" class="btn__signup">Sign Up</a>
+        <button class="btn__login">Login</button>
+        <button class="btn__signup">Sign Up</button>
     </div>
   </header>
 
   <main class="homepage">
     <section class="homepage__hero">
       <div class="homepage__hero__content">
-        <h1 class="homepage__title">Welcome to <span>TriviaBoost</span></h1>
-        <p class="homepage__subtitle">Play, learn, and compete with quizzes designed to make your brain stronger every day.</p>
-        <a class="homepage__button" href="#"><img src="../assets/img/triviaBoost-logo-whiteversion.svg" alt="img" width="18" height="18" loading="lazy">Get Started</a>
+        <h1 class="homepage__title">Ready to Boost Your Brainpower?</h1>
+        <p class="homepage__subtitle">Play, learn, and compete with quizzes designed to make your brain stronger every day</p>
+        <a class="homepage__button" href="#"><img src="../assets/img/triviaBoost-logo-whiteversion.svg" alt="img" width="18" height="18" fetchpriority="high">Get Started</a>
       </div>
     </section>
 
@@ -53,14 +53,14 @@
               <h1 class="title">Fun & Challenging Quizzes</h1>
               <p class="subtitle">Play quizzes across different subjects and challenge your knowledge every day.</p>
             </div>
-            <img src="../assets/img/subject-icons.svg" width="250" height="250" alt="img" loading="lazy">
+            <img src="../assets/img/subject-icons.svg" width="250" height="250" alt="img" fetchpriority="high">
           </div>
           <div class="box box2">
             <div class="box__content">
               <h1 class="title">Your Learning Journey</h1>
               <p class="subtitle">Track your performance with clear stats and discover your strengths and weaknesses.</p>
             </div>
-            <img src="../assets/img/features-progress-img.svg" width="250" height="250" alt="img" loading="lazy">
+            <img src="../assets/img/features-progress-img.svg" width="250" height="250" alt="img" fetchpriority="high">
           </div>
         </div>
         <div class="box__container">
@@ -69,14 +69,14 @@
               <h1 class="title">Climb the Leaderboard</h1>
               <p class="subtitle">Earn points with every quiz and compete to rise on the leaderboard.</p>
             </div>
-            <img src="../assets/img/Points-icon.svg" width="250" height="250" alt="img" loading="lazy">
+            <img src="../assets/img/Points-icon.svg" width="250" height="250" alt="img" fetchpriority="high">
           </div>
           <div class="box box4">
             <div class="box__content">
               <h1 class="title">Tailored Quizzes Just for You</h1>
               <p class="subtitle">Get personalized quizzes based on the questions you missed the most, so you improve exactly where you need to.</p>
             </div>
-            <img src="../assets/img/features-practice-icon.svg" width="250" height="250" alt="img" loading="lazy">
+            <img src="../assets/img/features-practice-icon.svg" width="250" height="250" alt="img" fetchpriority="high">
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
       <div class="contact__container">
         <div class="contact__title">
          <div class="logo">
-          <img src="../assets/img/contact-form-img.svg" alt="img" width="900" height="900" loading="lazy">
+          <img src="../assets/img/contact-form-img.svg" alt="img" width="900" height="900" fetchpriority="high">
           </div>
         </div>
         <form class="contact__form">
@@ -127,6 +127,92 @@
     </section>
 
   </main>
-  <script type="module" src="../js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+  const navItems = document.querySelectorAll('.navItem');
+  const btnLogin = document.querySelector('.btn__login');
+  const btnSignup = document.querySelector('.btn__signup');
+  
+  btnLogin.addEventListener('click', () => {
+    window.location.href = '/login';
+  });
+  
+  btnLogin.addEventListener('mouseenter', () => {
+    gsap.to(btnLogin, { rotate: 5, duration: 1, ease: 'elastic' });
+  });
+  
+  btnLogin.addEventListener('mouseleave', () => {
+    gsap.to(btnLogin, { rotate: 0, duration: 1, ease: 'elastic' });
+  });
+  
+  btnSignup.addEventListener('mouseenter', () => {
+    gsap.to(btnSignup, { rotate: 5, duration: 1, ease: 'elastic' });
+  });
+  
+  btnSignup.addEventListener('mouseleave', () => {
+    gsap.to(btnSignup, { rotate: 0, duration: 1, ease: 'elastic' });
+  });
+  
+  navItems.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+      gsap.to(element, { y: -2, duration: 0.1, ease: 'power2.inOut' });
+    });
+  
+    element.addEventListener('mouseleave', () => {
+      gsap.to(element, { y: 0, duration: 0.1, ease: 'power2.inOut' });
+    });
+  });
+  
+  function runHomepageAnimation() {
+    const mainTitle = document.querySelector('.homepage__title');
+    const subtitle = document.querySelector('.homepage__subtitle');
+  
+    gsap.set(mainTitle, { visibility: 'hidden' });
+  
+    const titleText = mainTitle.textContent.trim();
+    mainTitle.textContent = '';
+  
+    titleText.split('').forEach(char => {
+      const span = document.createElement('span');
+      span.textContent = char === ' ' ? '\u00A0' : char;
+      span.style.display = 'inline-block';
+      mainTitle.appendChild(span);
+    });
+  
+    gsap.set(mainTitle, { visibility: 'visible' });
+  
+    gsap.from(mainTitle.querySelectorAll('span'), {
+      opacity: 0,
+      y: 20,
+      duration: 0.5,
+      stagger: 0.05,
+      ease: 'elastic',
+      scale: 3
+    });
+  
+    gsap.from(subtitle, {
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      ease: 'power2.inOut'
+    });
+  
+    gsap.from(btnLogin, {
+      scale: 0,
+      filter: 'blur(50px)',
+      duration: 0.7,
+      ease: 'power3.out'
+    });
+  
+    gsap.from(btnSignup, {
+      scale: 0,
+      filter: 'blur(50px)',
+      duration: 0.7,
+      ease: 'power3.out'
+    });
+  }
+
+  runHomepageAnimation()
+</script>    
 </body>
 </html>
