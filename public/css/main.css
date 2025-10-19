@@ -25,11 +25,6 @@
 
 
 
-img {
-  pointer-events: none; 
-  -webkit-user-drag: none; 
-}
-
 :root {
   
   --color-blue: #36ffff;
@@ -86,6 +81,11 @@ body{
 
 }
 
+.header__logo .logo__icon{
+  display: inline-block;
+  transform-origin: center center;
+}
+
 
 
 
@@ -124,8 +124,7 @@ body{
   font-family: 'Figtree', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-gray);
-  transition: .25s ease;
+  color: var(--color-blueDark);
   display: flex;
   letter-spacing: -0.01em;
   align-items: center;
@@ -146,26 +145,22 @@ body{
 
 
 .register__section .btn__login{
-  font-family: 'Figtree',sans-serif;
-  font-size: 15px;
+  font-family: 'Figtree';
+  font-size: 16px;
   background-color: var(--color-blueDark);
   color: white;
-  display: flex;
-  align-items: center;
   border: none;
-  font-weight: 500;
-  padding: 8px 32px;
+  padding: 8px 26px;
   border-radius: 12px;
 }
 
 
 .register__section .btn__signup{
-  font-family: 'Figtree', sans-serif;
-  font-size: 15px;
+  font-family: 'Figtree';
+  font-size: 16px;
   background-color: var(--color-blueDark);
   color: white;
-  font-weight: 500;
-  padding: 8px 32px;
+  padding: 8px 26px;
   border-radius: 12px;
   border: none;
 }
@@ -290,10 +285,10 @@ body{
   font-size: 17px;
   font-family: 'Figtree', sans-serif;
   display: flex;
-  font-weight: 500;
+  font-weight: 600;
   justify-content: center;
   position: relative;
-  color: var(--color-gray);
+  color: var(--color-blueDark);
   z-index: -1;
   
 }
@@ -303,7 +298,7 @@ body{
   position: absolute;
   bottom: -10px;
   width: 60px;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg,var(--color-blue),var(--color-blue2));
   border-radius: 2px;
   z-index: -1;
@@ -454,8 +449,8 @@ body{
   font-size: 17px;
   font-family: 'Figtree', sans-serif;
   display: flex;
-  font-weight: 500;
-  color: var(--color-gray);
+  font-weight: 600;
+  color: var(--color-blueDark);
   justify-content: center;
   position: relative;
   z-index: -1;
@@ -467,7 +462,7 @@ body{
   position: absolute;
   bottom: -10px;
   width: 60px;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg,var(--color-blue),var(--color-blue2));
   border-radius: 2px;
   z-index: -1;

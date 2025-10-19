@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="header__logo">
-      <img src="../assets/img/trivia-boost-logo.svg" alt="img" width="36" height="36" fetchpriority="high">
+      <img  class="logo__icon" src="../assets/img/trivia-boost-logo.svg" alt="img" width="36" height="36" fetchpriority="high">
       <h1 class="header__title"><a href="#">TriviaBoost</a></h1>
     </div>
     <nav class="navbar">
@@ -23,8 +23,8 @@
       </div>
     </nav>
     <div class="register__section">
-        <button class="btn__login">Login</button>
-        <button class="btn__signup">Sign Up</button>
+        <button class="btn__login">Sign in</button>
+        <button class="btn__signup">Sign up</button>
     </div>
   </header>
 
@@ -129,37 +129,51 @@
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script>
+  const logo = document.querySelector('.logo__icon')
   const navItems = document.querySelectorAll('.navItem');
   const btnLogin = document.querySelector('.btn__login');
   const btnSignup = document.querySelector('.btn__signup');
+
+
+  logo.addEventListener('mouseenter', () => {
+    gsap.to('.logo__icon', { rotate: -10, duration: 1, ease: 'elastic' })
+  })
+
+  logo.addEventListener('mouseleave', () => {
+    gsap.to('.logo__icon', { rotate: 0, duration: 1, ease: 'elastic'})
+  })
   
   btnLogin.addEventListener('click', () => {
     window.location.href = '/login';
   });
+
+  btnSignup.addEventListener('click', () => {
+    window.location.href = '/signup';
+  });
   
   btnLogin.addEventListener('mouseenter', () => {
-    gsap.to(btnLogin, { rotate: 5, duration: 1, ease: 'elastic' });
+    gsap.to(btnLogin, { scale: 1.05, duration: 1, ease: 'elastic' });
   });
   
   btnLogin.addEventListener('mouseleave', () => {
-    gsap.to(btnLogin, { rotate: 0, duration: 1, ease: 'elastic' });
+    gsap.to(btnLogin, { scale: 1, duration: 1, ease: 'elastic' });
   });
   
   btnSignup.addEventListener('mouseenter', () => {
-    gsap.to(btnSignup, { rotate: 5, duration: 1, ease: 'elastic' });
+    gsap.to(btnSignup, { scale: 1.05, duration: 1, ease: 'elastic' });
   });
   
   btnSignup.addEventListener('mouseleave', () => {
-    gsap.to(btnSignup, { rotate: 0, duration: 1, ease: 'elastic' });
+    gsap.to(btnSignup, { scale: 1, duration: 1, ease: 'elastic' });
   });
   
   navItems.forEach(element => {
     element.addEventListener('mouseenter', () => {
-      gsap.to(element, { y: -2, duration: 0.1, ease: 'power2.inOut' });
+      gsap.to(element, { y: -2,scale: 1.1, duration: 0.1, ease: 'power3.inOut' });
     });
   
     element.addEventListener('mouseleave', () => {
-      gsap.to(element, { y: 0, duration: 0.1, ease: 'power2.inOut' });
+      gsap.to(element, { y: 0, scale: 1, duration: 0.1, ease: 'power3.inOut' });
     });
   });
   
@@ -196,20 +210,7 @@
       duration: 1,
       ease: 'power2.inOut'
     });
-  
-    gsap.from(btnLogin, {
-      scale: 0,
-      filter: 'blur(50px)',
-      duration: 0.7,
-      ease: 'power3.out'
-    });
-  
-    gsap.from(btnSignup, {
-      scale: 0,
-      filter: 'blur(50px)',
-      duration: 0.7,
-      ease: 'power3.out'
-    });
+
   }
 
   runHomepageAnimation()

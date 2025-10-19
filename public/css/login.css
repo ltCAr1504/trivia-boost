@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 
@@ -40,17 +41,16 @@ body{
     justify-content: center;
     min-height: 100vh;
     background-color: var(--color-background);
-    align-items: center;
 }
 
 .login__container{
-    width: 450px;
+    width: 350px;
     height: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 88px;
+    margin-top: 140px;
     margin-bottom: 150px;
 
 }
@@ -69,8 +69,8 @@ body{
 }
 
 .login__container .logo h1{
-    font-size: 2.5rem;
-    font-family: 'Poppins';
+    font-size: 2rem;
+    font-family: 'Figtree';
     font-weight: 500;
     color: var(--color-blueDark);
 }
@@ -135,16 +135,11 @@ body{
     border-radius: 12px;
     font-size: 1rem;
     font-weight: 500;
-    font-weight: 600;
     color: white;
-    transition: .25s ease;
     box-shadow: inset 0 0 2px rgba(255,255,255,1);
     background-color: var(--color-blueDark);
 }
 
-.btn__signin .btn:hover{
-    background-color: var(--color-gray);
-}
 
 .create__account{
     display: flex;
