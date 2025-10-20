@@ -130,9 +130,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script>
   const logo = document.querySelector('.logo__icon')
+  const contactBtn = document.querySelector('.contact__btn')
   const homeBtn = document.querySelector('.homepage__button')
   const btnLogin = document.querySelector('.btn__login');
   const btnSignup = document.querySelector('.btn__signup');
+
+  
+  contactBtn.addEventListener('mouseenter', () => {
+    gsap.to(contactBtn, { scale: 1.05, duration: 1, ease: 'elastic' })
+  })
+
+  contactBtn.addEventListener('mouseleave', () => {
+    gsap.to(contactBtn, { scale: 1, duration: 1, ease: 'elastic'})
+  })
 
 
   homeBtn.addEventListener('mouseenter', () => {
