@@ -33,7 +33,7 @@
       <div class="homepage__hero__content">
         <h1 class="homepage__title">Ready to Boost Your Brainpower?</h1>
         <p class="homepage__subtitle">Play, learn, and compete with quizzes designed to make your brain stronger every day</p>
-        <a class="homepage__button" href="#"><img src="../assets/img/triviaBoost-logo-whiteversion.svg" alt="img" width="18" height="18" fetchpriority="high">Get Started</a>
+        <a class="homepage__button" href="/login"><img src="../assets/img/triviaBoost-logo-whiteversion.svg" alt="img" width="18" height="18" fetchpriority="high">Get Started</a>
       </div>
     </section>
 
@@ -130,10 +130,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script>
   const logo = document.querySelector('.logo__icon')
-  const navItems = document.querySelectorAll('.navItem');
+  const homeBtn = document.querySelector('.homepage__button')
   const btnLogin = document.querySelector('.btn__login');
   const btnSignup = document.querySelector('.btn__signup');
 
+
+  homeBtn.addEventListener('mouseenter', () => {
+    gsap.to(homeBtn, { scale: 1.05, duration: 1, ease: 'elastic' })
+  })
+
+  homeBtn.addEventListener('mouseleave', () => {
+    gsap.to(homeBtn, { scale: 1, duration: 1, ease: 'elastic'})
+  })
 
   logo.addEventListener('mouseenter', () => {
     gsap.to('.logo__icon', { rotate: -10, duration: 1, ease: 'elastic' })
@@ -167,19 +175,11 @@
     gsap.to(btnSignup, { scale: 1, duration: 1, ease: 'elastic' });
   });
   
-  navItems.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-      gsap.to(element, { y: -2,scale: 1.1, duration: 0.1, ease: 'power3.inOut' });
-    });
-  
-    element.addEventListener('mouseleave', () => {
-      gsap.to(element, { y: 0, scale: 1, duration: 0.1, ease: 'power3.inOut' });
-    });
-  });
   
   function runHomepageAnimation() {
     const mainTitle = document.querySelector('.homepage__title');
     const subtitle = document.querySelector('.homepage__subtitle');
+    const homeBtn = document.querySelector('.homepage__button')
   
     gsap.set(mainTitle, { visibility: 'hidden' });
   
@@ -210,6 +210,13 @@
       duration: 1,
       ease: 'power2.inOut'
     });
+
+    gsap.from(homeBtn, {
+      scale: 0,
+      y: 50,
+      duration: 2,
+      ease: 'elastic'
+    })
 
   }
 

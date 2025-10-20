@@ -42,7 +42,7 @@
   --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
   --box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .3);
-  --color-background: #f9fafb;
+  --color-background: hsl(0 0 97%);
   --color-primary: var(--color-blue);
   --color-button: var(--color-yellow);
   --color-success: var(--color-green);
@@ -129,8 +129,15 @@ body{
   letter-spacing: -0.01em;
   align-items: center;
   position: relative;
+  transition: 0.2s ease;
 }
 
+
+.info a:hover{
+  transform: translateY(-1px);
+  color: var(--color-gray);
+
+}
 
 
 
@@ -242,12 +249,14 @@ body{
   font-family: 'Figtree', sans-serif;
   color: var(--color-white);
   gap: 8px;
+  box-shadow: 
+  0 4px 10px hsla(322, 100%, 71%, 0.4),
+  0 2px 5px hsla(322, 100%, 71%, 0.3);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
   will-change: background-color; 
-  transition: .15s ease;
 }
 
 
