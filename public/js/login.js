@@ -11,7 +11,7 @@ $('login__form').addEventListener('submit', async (e) => {
     if(!email || !password){
         errDiv.textContent = 'Please complete all fields'
         setTimeout(() => errDiv.textContent = '', 4000)
-        return
+        return;
     }
 
     try{
