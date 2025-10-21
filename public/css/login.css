@@ -177,3 +177,40 @@ body{
 .create__account p a:hover{
     text-decoration: underline;
 }
+
+@media (max-width: 1750px){
+    .login__container .logo img{
+        height: auto;
+        width: 32px;
+    }
+
+    .login__container .logo h1{
+        font-size: 1.7rem;
+    }
+
+    .login__container{
+        width: 300px;
+        height: 300px;
+    }
+
+    .create__account p, .create__account p a{
+        font-size: 0.8rem;
+    }
+
+    .input input{
+        padding: 10px 14px;
+    }
+
+    .input .input__label, .input2 .input__label{
+        font-size: 12px;
+    }
+
+    .btn__signin .btn{
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .input2 .input__label a{
+        font-size: 0.8rem;
+    }
+}
