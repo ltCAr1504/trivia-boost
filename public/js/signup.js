@@ -11,7 +11,11 @@ $('signup__form').addEventListener('submit', async (e) => {
     const validateLengthPassword = password.length < 8;
     if (validateLengthPassword) {
         errDiv.textContent = 'Password must be at least 8 characters long';
-        setTimeout(() => (errDiv.textContent = ''), 4000);
+        errDiv.style.display = 'block';
+        setTimeout(() => {
+            errDiv.textContent = ''
+            errDiv.style.display = 'none';
+        }, 4000);
         return;
     }
 
@@ -28,15 +32,17 @@ $('signup__form').addEventListener('submit', async (e) => {
         const data = await res.json()
 
         console.log(res.status)
-        console.log(data)
 
         if(res.ok){
             localStorage.setItem('token', data.token)
             window.location.href = '/dashboard'
         } else {
             errDiv.textContent = data.message
-            setTimeout(() => errDiv.textContent = '', 4000);
-            console.log('Error!')
+            errDiv.style.display = 'block';
+            setTimeout(() => {
+                errDiv.textContent = ''
+                errDiv.style.display = 'none';
+            }, 4000);
         }
 
 
@@ -44,6 +50,10 @@ $('signup__form').addEventListener('submit', async (e) => {
     catch(err){
         console.error('Login Error', err)
         errDiv.textContent = 'Error connecting with the server!'
-        setTimeout(() => errDiv.textContent = '', 4000)
+        errDiv.style.display = 'block';
+        setTimeout(() => {
+            errDiv.textContent = ''
+            errDiv.style.display = 'none';
+        }, 4000);
     }
 })

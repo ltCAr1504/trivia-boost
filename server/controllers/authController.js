@@ -7,17 +7,17 @@ exports.loginUser = async (req,res) => {
     try {
 
       const user = await User.findOne({ email })
-      if(!user) return res.status(401).json({message: 'Invalid Credentials'})
+      if(!user) return res.status(401).json({message: 'Invalid credentials!'})
 
       const isPasswordValidate = await bcrypt.compare(password, user.password)
-      if(!isPasswordValidate) return res.status(401).json({message: 'Invalid Credentials'})
+      if(!isPasswordValidate) return res.status(401).json({message: 'Invalid credentials!'})
 
       const token = jwt.sign({userId: user._id}, process.env.JWT_SECRET, {expiresIn: '1h'});
       return res.status(200).json({token})
     }
     catch(err) {
       console.error('Login Error', err)
-      res.status(500).json({message: 'Internal server Error'})
+      res.status(500).json({message: 'Internal server Error!'})
     }
 
   }
@@ -35,9 +35,9 @@ exports.signupUser = async (req,res) => {
       ])
 
         
-        if(emailExists) return res.status(400).json({message: 'The email you have provided is already associated with an account.'})
+        if(emailExists) return res.status(400).json({message: 'The email you have provided is already associated with an account!'})
         
-        if(usernameExists) return res.status(400).json({message: 'This username already exists'})
+        if(usernameExists) return res.status(400).json({message: 'This username already exists!'})
         
         const hashedPassword = await bcrypt.hash(password, 10)
 
@@ -59,6 +59,6 @@ exports.signupUser = async (req,res) => {
     }
     catch(err) {
         console.error('Register Error',err)
-        res.status(500).json({message: 'Internal server Error'})
+        res.status(500).json({message: 'Internal server Error!'})
     }
 }

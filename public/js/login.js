@@ -9,8 +9,12 @@ $('login__form').addEventListener('submit', async (e) => {
 
 
     if(!email || !password){
-        errDiv.textContent = 'Please complete all fields'
-        setTimeout(() => errDiv.textContent = '', 4000)
+        errDiv.textContent = 'Please complete all fields!'
+        errDiv.style.display = 'block';
+        setTimeout(() => {
+            errDiv.textContent = ''
+            errDiv.style.display = 'none';
+        }, 4000);
         return;
     }
 
@@ -28,7 +32,11 @@ $('login__form').addEventListener('submit', async (e) => {
             window.location.href = '/dashboard'
         } else {
             errDiv.textContent = data.message
-            setTimeout(() => errDiv.textContent = '', 4000);
+            errDiv.style.display = 'block';
+            setTimeout(() => {
+                errDiv.textContent = ''
+                errDiv.style.display = 'none';
+            }, 4000);
         }
 
 
@@ -36,6 +44,10 @@ $('login__form').addEventListener('submit', async (e) => {
     catch(err){
         console.error('Login Error', err)
         errDiv.textContent = 'Error connecting with the server!'
-        setTimeout(() => errDiv.textContent = '', 4000)
+        errDiv.style.display = 'block';
+        setTimeout(() => {
+            errDiv.textContent = ''
+            errDiv.style.display = 'none';
+        }, 4000);
     }
 })
