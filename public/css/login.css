@@ -22,7 +22,7 @@
   --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
   
-  --color-background: #f9fafb;
+  --color-background: hsl(0 0 99%);
   --color-primary: var(--color-blue);
   --color-button: var(--color-yellow);
   --color-success: var(--color-green);
