@@ -22,7 +22,10 @@
   --color-green-aqua: #00EA9C;
   --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
-  
+--box-shadow: 0 2px 0 0 rgba(150,150,150,.6),
+              1px 0 0 0 rgba(150,150,150,.3),
+             -1px 0 0 0 rgba(150,150,150,.3),
+              0 -1px 0 0 rgba(150,150,150,.3);
   --color-background: hsl(0 0 100%);
   --color-primary: var(--color-blue);
   --color-button: var(--color-yellow);
@@ -106,10 +109,7 @@ body{
     width: inherit;
     padding: 12px 16px;
     border-radius: 12px;
-    box-shadow: 0 3px 1px 0 rgba(150,150,150,.4),
-              1px 0 1px 0 rgba(150,150,150,.4),
-              -1px 0 1px 0 rgba(150,150,150,.4),
-              0 -1px 1px 0 rgba(150,150,150,.4);
+    box-shadow: var(--box-shadow);
     border: none;
 }
 
@@ -219,11 +219,6 @@ body{
 
     .input .input__label, .input2 .input__label{
         font-size: 12px;
-    }
-
-    .btn__signin .btn{
-        padding: 12px 14px;
-        font-size: 0.9rem;
     }
 
     .input2 .input__label a{
