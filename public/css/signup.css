@@ -45,7 +45,7 @@
     --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
   
     --box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .3);
-    --color-background: #f9fafb;
+    --color-background: hsl(0 0 100%);
     --color-primary: var(--color-blue);
     --color-button: var(--color-yellow);
     --color-success: var(--color-green);
@@ -126,7 +126,7 @@
 
 .container .signup__container .logo img{
     height: auto;
-    width: 48px;
+    width: 36px;
 }
 
 .container .signup__form{
@@ -144,7 +144,7 @@
 }
 
 .container .signup__form .title h1{
-    font-size: 2rem;
+    font-size: 1.65rem;
     font-family: 'Figtree';
     color: var(--color-blueDark);
     font-weight: 500;

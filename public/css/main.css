@@ -32,7 +32,7 @@
   --color-yellow: gold;     
   --color-blueDark: #1a1423;
   --color-blueDark2: #0A091B;
-  --color-gray: rgb(98, 98, 98);
+  --color-gray: #7b7194;
   --color-green: #70e000;      
   --color-white: white;      
   --color-red: #FF4500;   
@@ -41,10 +41,10 @@
   --color-green-aqua: #00EA9C;
   --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
-  --box-shadow: 0 3px 1px 0 rgba(200,200,200,.3),
-                3px 0 1px 0 rgba(200,200,200,.3),
-                -2.5px 0 1px 0 rgba(200,200,200,.3),
-                0 -2.5px 1px 0 rgba(200,200,200,.3);
+  --box-shadow: 0 3px 1px 0 rgba(150,150,150,.4),
+                3px 0 1px 0 rgba(150,150,150,.4),
+                -2.5px 0 1px 0 rgba(150,150,150,.4),
+                0 -2.5px 1px 0 rgba(150,150,150,.4);
   --color-background: hsl(0 0 100%);
   --color-primary: var(--color-blue);
   --color-button: var(--color-yellow);
@@ -93,7 +93,7 @@ body{
 
 
 .header__logo .header__title {
-  font-size: 2.2em;
+  font-size: 2em;
   background: linear-gradient(70deg, var(--color-blue),var(--color-blue2));
   font-family: 'Dancing Script', cursive;
   background-clip: text;
@@ -159,7 +159,10 @@ body{
   font-size: 16px;
   background-color: var(--color-blueDark);
   color: white;
-  box-shadow: inset 0 0 2px rgba(255,255,255,1);
+  box-shadow: 0 3px 1px 0 hsla(270, 28%, 1%, 1),
+              1px 0 1px 0 hsla(270, 28%, 1%, 1),
+              -1px 0 1px 0 hsla(270, 28%, 1%, 1),
+              0 -1px 1px 0 hsla(270, 28%, 1%, 1);
   border: none;
   font-weight: 500;
   padding: 8px 26px;
@@ -174,7 +177,10 @@ body{
   color: white;
   font-weight: 500;
   padding: 8px 26px;
-  box-shadow: inset 0 0 2px rgba(255,255,255,1);
+    box-shadow: 0 3px 1px 0 hsla(270, 28%, 1%, 1),
+              1px 0 1px 0 hsla(270, 28%, 1%, 1),
+              -1px 0 1px 0 hsla(270, 28%, 1%, 1),
+              0 -1px 1px 0 hsla(270, 28%, 1%, 1);
   border-radius: 12px;
   border: none;
 }
@@ -211,7 +217,7 @@ body{
 }
 
 .homepage .homepage__title span{
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: 'Figtree', sans-serif;
   font-weight: 400;
   color: var(--color-blueDark);
@@ -219,25 +225,16 @@ body{
 
 
 
-.homepage .homepage__title .logo__name span{
-  font-size: 6rem;
-  align-self: center;
-  background: linear-gradient(90deg, var(--color-blue),var(--color-blue2 ));
-  font-family: 'Dancing Script', cursive;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 
 .homepage .homepage__subtitle{
-  font-size: 1.225rem;
+  font-size: 1.1rem;
   font-family: 'Figtree';
   font-weight: 400;
   color: var(--color-gray);
 }
 
 .homepage .homepage__button{
-  font-size: 1.10rem;
+  font-size: 1rem;
   margin-top: 16px;
   font-weight: 500;
   border-radius: 12px;
@@ -256,14 +253,19 @@ body{
   font-family: 'Figtree', sans-serif;
   color: var(--color-white);
   gap: 8px;
-  box-shadow: 
-  0 4px 10px hsla(322, 100%, 71%, 0.4),
-  0 2px 5px hsla(322, 100%, 71%, 0.3);
+  box-shadow: 0 3px 1px 0 hsla(322, 100%, 60%, 1),
+              1px 0 1px 0 hsla(322, 100%, 60%, 1),
+              -1px 0 1px 0 hsla(322, 100%, 60%, 1),
+              0 -1px 1px 0 hsla(322, 100%, 60%, 1);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   will-change: background-color; 
+}
+
+.quizzes__icon{
+  fill: var(--color-white);
 }
 
 
@@ -309,10 +311,10 @@ body{
   font-family: 'Figtree', sans-serif;
 
   background-color: white;
-  box-shadow: 0 3px 1px 0 rgba(200,200,200,.3),
-              1px 0 1px 0 rgba(200,200,200,.3),
-              -1px 0 1px 0 rgba(200,200,200,.3),
-              0 -1px 1px 0 rgba(200,200,200,.3);
+  box-shadow: 0 3px 1px 0 rgba(150,150,150,.4),
+              1px 0 1px 0 rgba(150,150,150,.4),
+              -1px 0 1px 0 rgba(150,150,150,.4),
+              0 -1px 1px 0 rgba(150,150,150,.4);
   font-weight: 500;
   color: var(--color-blueDark);
   z-index: -1;
@@ -346,7 +348,7 @@ body{
 .box{
   display: flex;
   background-color: white;
-  width: 750px;
+  width: 650px;
   height: 300px;
   align-items: center;
   gap: 24px;
@@ -358,9 +360,7 @@ body{
 .box .box__content{
   width: 50%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
   gap: 16px;
   padding-left: 1.5rem;
 }
@@ -387,215 +387,6 @@ body{
 }
 
 
-
-
-
-
-
-.contact{
-  min-height: 100vh;
-  position: relative;
-  margin-top: 80px;
-}
-
-.contact__header{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contact__header .contact__title{
-  font-size: 56px;
-  font-family: 'Figtree', sans-serif;
-  font-weight: 400;
-  color: var(--color-blueDark);
-}
-
-.contact__header .contact__label{
-  font-size: 17px;
-  font-family: 'Figtree', sans-serif;
-  display: flex;
-  font-weight: 600;
-  color: var(--color-blueDark);
-  justify-content: center;
-  position: relative;
-  z-index: -1;
-  
-}
-
-.contact__header .contact__label::after{
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg,var(--color-blue),var(--color-blue2));
-  border-radius: 2px;
-  z-index: -1;
-
-}
-
-.contact__container{
-  display: flex;
-  width: 1250px;
-  height: 650px;
-  margin: 0 auto;
-  background-color: var(--color-white);
-  border: 1px solid rgb(224, 224, 224);
-  margin-top: 40px;
-  border-radius: 1.8rem;
-}
-
-.contact__container .contact__title{
-  width: 50%;
-  position: relative;
-  border-top-left-radius: 1.8rem;
-  border-bottom-left-radius: 1.8rem;
-}
-
-.contact__container .contact__title .logo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 48px;
-}
-
-
-
-.contact__container .contact__title{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-
-
-
-.contact__container .contact__form{
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 50%;
-  border-top-right-radius: 1.8rem;
-  border-bottom-right-radius: 1.8rem;
-  background-color: var(--color-white)
-}
-
-.contact__container .contact__form__title{
-  font-size: 48px;
-  color: var(--color-blueDark);
-  font-family: 'Figtree';
-  font-weight: 400;
-  margin-bottom: 32px;
-}
-
-
-.contact-groups{
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.input__group1{
-  display: flex;
-  gap: 24px;
-}
-
-.input__group1 .input1{
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.input__group1 .input1 label{
-  color: var(--color-blueDark);
-  font-family: 'Figtree';
-  font-weight: 600;
-}
-
-.input__group1 .input2{
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.input__group1 .input2 label{
-  color: var(--color-blueDark);
-  font-family: 'Figtree';
-  font-weight: 600;
-}
-
-
-.input__group2{
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.input__group2 .input1{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.input__group2 .input1 label{
-  color: var(--color-blueDark);
-  font-family: 'Figtree';
-  font-weight: 600;
-}
-
-.input__group2 .input2{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.input__group2 .input2 label{
-  color: var(--color-blueDark);
-  font-family: 'Figtree';
-  font-weight: 600;
-}
-
-.textarea{
-  resize: none;
-  height: 100px;
-}
-
-
-.contact__input{
-  padding: 12px 16px;
-  border-radius: 12px;
-  outline: none;
-  gap: 24px;
-  width: 100%;
-  border: none;
-  border: 1px solid rgba(0,0,0,.25);
-  color: var(--color-blueDark);
-  font-size: 1rem;
-  font-family: 'Figtree';
-
-}
-
-.contact__input::placeholder{
-  color: gray;
-  filter: brightness(60%);
-}
-
-.contact__btn{
-  padding: 16px 16px;
-  font-size: 1.1em;
-  margin-top: 16px;
-  font-family: 'Figtree';
-  color: white;
-  border: none;
-  outline: none;
-  border-radius: 12px;
-  font-weight: 500;
-  width: 45%;
-  background-color: var(--color-blueDark);
-  box-shadow: inset 0 0 2px rgba(255,255,255,1);
-}
 
 
 
