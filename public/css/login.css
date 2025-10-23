@@ -22,10 +22,10 @@
   --color-green-aqua: #00EA9C;
   --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
 
---box-shadow: 0 2px 0 0 rgba(150,150,150,.6),
-              1px 0 0 0 rgba(150,150,150,.3),
-             -1px 0 0 0 rgba(150,150,150,.3),
-              0 -1px 0 0 rgba(150,150,150,.3);
+--box-shadow: 0 1px 0 0 rgba(150,150,150,.4),
+              1px 0 0 0 rgba(150,150,150,.4),
+             -1px 0 0 0 rgba(150,150,150,.4),
+              0 -1px 0 0 rgba(150,150,150,.4);
   --color-background: hsl(0 0 100%);
   --color-primary: var(--color-blue);
   --color-button: var(--color-yellow);
@@ -114,7 +114,7 @@ body{
 }
 
 .input input::placeholder{
-    font-family: 'Figtree';
+    font-family: 'Urbanist';
     color: rgba(150,150,150,1);
     font-size: 0.9rem;
 
@@ -122,7 +122,7 @@ body{
 
 
 .input .input__label{
-    font-family: 'Figtree';
+    font-family: 'Urbanist';
     font-weight: 600;
     font-size: 14px;
 }
@@ -153,7 +153,7 @@ body{
     width: 100%;
     padding: 10px 10px;
     border: none;
-    font-family: 'Mona Sans';
+    font-family: 'Urbanist';
     border-radius: 12px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -164,6 +164,10 @@ body{
               0 -1px 1px 0 hsla(270, 28%, 1%, 1);
     cursor: pointer;
     background-color: var(--color-blueDark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    will-change: transform, opacity; 
 }
 
 
@@ -176,14 +180,14 @@ body{
 .create__account p{
     display: flex;
     gap: 4px;
-    font-family: 'Mona Sans';
+    font-family: 'Urbanist';
     font-weight: 500;
     color: var(--color-gray);
     font-size: 0.9rem;
 }
 
 .create__account p a{
-    font-family: 'Mona Sans';
+    font-family: 'Urbanist';
     color: var(--link-color);
     font-weight: 400;
     font-size: 0.9rem;

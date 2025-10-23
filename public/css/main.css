@@ -20,7 +20,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Dancing Script', cursive;
   outline: none;
 }
 
@@ -82,7 +81,7 @@ body{
 .header__logo{
   display:flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 
 }
 
@@ -94,16 +93,16 @@ body{
 
 
 
-.header__logo .header__title {
-  font-size: 2em;
+.header__logo .header__title a{
+  font-size: 2rem;
+  font-weight: 500;
   background: linear-gradient(70deg, var(--color-blue),var(--color-blue2));
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', sans-serif;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
-
 
 }
+
 
 
 
@@ -113,14 +112,14 @@ body{
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   
 }
 
 .info{
   display: flex;
-  gap: 36px;
+  gap: 52px;
   border-radius: 1.8em;
   z-index: inherit;
 }
@@ -129,18 +128,34 @@ body{
   font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  border-radius: 12px;
-  padding: 10px 10px;
+  border-radius: 50px;
   color: var(--color-blueDark);
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
-  transition: 0.2s ease;
+  transition: 0.1s ease;
+
 }
 
-.info a:hover{
-  background-color: rgba(150,150,150,.2);
+.info a::after{
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  transform: translate(-50%,0);
+  border-radius: 12px;
+  background: var(--color-blueDark);
+  transition: 0.1s ease;
 }
+
+.info a:hover::after{
+  width: 100%;
+}
+
+
 
 
 
@@ -169,6 +184,10 @@ body{
   font-weight: 500;
   padding: 8px 26px;
   border-radius: 12px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform; 
 }
 
 
@@ -185,6 +204,10 @@ body{
               0 -1px 1px 0 hsla(270, 28%, 1%, 1);
   border-radius: 12px;
   border: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform; 
 }
 
 
@@ -223,6 +246,10 @@ body{
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   color: var(--color-blueDark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform, opacity; 
 }
 
 
@@ -233,6 +260,10 @@ body{
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
   color: var(--color-gray);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  will-change: transform, opacity; 
 }
 
 .homepage .homepage__button{
@@ -262,7 +293,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  will-change: background-color; 
+  will-change: transform; 
 }
 
 .quizzes__icon{
@@ -295,7 +326,7 @@ body{
 
 .features__subtitle{
   font-size: 1rem;
-  font-family: 'Figtree';
+  font-family: 'Urbanist';
   font-weight:  400;
   color: var(--color-gray);
 }
@@ -309,11 +340,11 @@ body{
   font-size: 16px;
   border-radius: 16px;
   padding: 6px 10px;
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   background-color: white;
   box-shadow: var(--box-shadow);
   font-weight: 500;
@@ -379,7 +410,7 @@ body{
 
 .box .box__content p{
   font-size: 1rem;
-  font-family: 'Figtree';
+  font-family: 'Urbanist', sans-serif;
   text-align: left;
   font-weight: 500;
   color: var(--color-gray);
