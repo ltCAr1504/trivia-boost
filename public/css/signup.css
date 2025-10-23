@@ -45,10 +45,10 @@
     --color-green-aqua: #00EA9C;
     --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
   
-    --box-shadow: 0 1px 0 0 rgba(150,150,150,.4),
-                1px 0 0 0 rgba(150,150,150,.4),
-                -1px 0 0 0 rgba(150,150,150,.4),
-                0 -1px 0 0 rgba(150,150,150,.4);
+    --box-shadow: 0 2px 0 0 rgba(150,150,150,.3),
+                1px 0 0 0 rgba(150,150,150,.3),
+                -1px 0 0 0 rgba(150,150,150,.3),
+                0 -1px 0 0 rgba(150,150,150,.3);
     --color-background: hsl(0 0 100%);
     --color-primary: var(--color-blue);
     --color-button: var(--color-yellow);
@@ -128,7 +128,7 @@
     margin-bottom: 24px;
 }
 
-.container .signup__container .logo img{
+.container .signup__container .signup__form img{
     height: auto;
     width: 36px;
 }
@@ -148,16 +148,16 @@
 }
 
 .container .signup__form .title h1{
-    font-size: 1.65rem;
+    font-size: 1.8rem;
     font-family: 'Urbanist', sans-serif;
     color: var(--color-blueDark);
     font-weight: 500;
 }
 
 .container .signup__form .title p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'Urbanist', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     color: var(--color-gray);
 }
@@ -165,7 +165,7 @@
 .inputs__container{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
 }
 
 
@@ -186,7 +186,7 @@
 .inputs__container .input input::placeholder{
     font-family: 'Urbanist';
     color: rgba(150,150,150,1);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 
@@ -194,15 +194,15 @@
 
 .inputs__container .input label{
     font-family: 'Urbanist';
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13.5px;
 
 }
 
 
 .create__account{
     width: 100%;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 .create__account .create__account__btn{

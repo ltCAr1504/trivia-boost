@@ -12,7 +12,8 @@
     <div class="login__container">
         <div class="logo">
             <img src="../assets/img/trivia-boost-logo.svg" alt="" fetchpriority="high">
-            <h1>Welcome Back!</h1>
+            <h1>Welcome Back</h1>
+            <p>Please enter your details to sign in</p>
         </div>
         <form id='login__form' class="inputs__container">
             <div id="errDivContainer" class="errDivContainer">Invalid credentials!</div>
@@ -45,11 +46,11 @@
     const btn = document.querySelector('.btn')
 
     btn.addEventListener('mouseenter', () => {
-        gsap.to(btn, { scale: 1.05, duration: 1, ease: 'elastic'})
+        gsap.to(btn, { scale: 1.05, duration: 1, ease: 'elastic.out(1.3)'})
     })
 
     btn.addEventListener('mouseleave', () => {
-        gsap.to(btn, { scale: 1, duration: 1, ease: 'elastic'})
+        gsap.to(btn, { scale: 1, duration: 1, ease: 'elastic.out(1.3)'})
     })
 
     

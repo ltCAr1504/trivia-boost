@@ -11,11 +11,9 @@
 <body>
     <div class="container">
         <div class="signup__container">
-            <div class="logo">
-                <img src="../assets/img/trivia-boost-logo.svg" alt="" fetchpriority="high">
-            </div>
             <form id="signup__form" class="signup__form">
                 <div class="title">
+                    <img src="../assets/img/trivia-boost-logo.svg" alt="" fetchpriority="high">
                     <h1>Welcome to TriviaBoost!</h1>
                     <p>Create your account and train you brain</p>
                 </div>
@@ -50,11 +48,11 @@
     const btn = document.querySelector('.create__account__btn')
 
     btn.addEventListener('mouseenter', () => {
-        gsap.to(btn, { scale: 1.05, duration: 1, ease: 'elastic'})
+        gsap.to(btn, { scale: 1.05, duration: 1, ease: 'elastic.out(1.7)'})
     })
 
     btn.addEventListener('mouseleave', () => {
-        gsap.to(btn, { scale: 1, duration: 1, ease: 'elastic'})
+        gsap.to(btn, { scale: 1, duration: 1, ease: 'elastic.out(1.7)'})
     })
 
 </script>
