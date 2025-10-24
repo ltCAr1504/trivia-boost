@@ -259,7 +259,9 @@ body{
   font-size: 1.1rem;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  color: var(--color-gray);
+  background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -274,7 +276,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-rose);
+  background: var(--color-blueDark);
   color: var(--color-white);
   border: none;
   display: flex;
@@ -285,11 +287,10 @@ body{
   font-family: 'Urbanist', sans-serif;
   color: var(--color-white);
   gap: 8px;
-  box-shadow: 0 3px 1px 0 hsla(322, 100%, 60%, 1),
-              1px 0 1px 0 hsla(322, 100%, 60%, 1),
-              -1px 0 1px 0 hsla(322, 100%, 60%, 1),
-              0 -1px 1px 0 hsla(322, 100%, 60%, 1);
-
+  box-shadow: 0 3px 1px 0 hsla(270, 28%, 1%, 1),
+              1px 0 1px 0 hsla(270, 28%, 1%, 1),
+              -1px 0 1px 0 hsla(270, 28%, 1%, 1),
+              0 -1px 1px 0 hsla(270, 28%, 1%, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -328,7 +329,9 @@ body{
   font-size: 1rem;
   font-family: 'Urbanist';
   font-weight:  400;
-  color: var(--color-gray);
+  background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .features__label__container{
@@ -347,14 +350,14 @@ body{
   gap: 6px;
   background-color: white;
   box-shadow: var(--box-shadow);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-blueDark);
   z-index: -1;
 }
 
 .features__header .features__label svg{
+  stroke: none;
   fill: var(--color-blueDark);
-  stroke: var(--color-blueDark);
 }
 
 

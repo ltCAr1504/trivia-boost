@@ -100,24 +100,30 @@
     font-family: 'Urbanist';
 }
 
+.container .signup__container .login__link{
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
 
 .container .signup__container .login__link p{
     font-family: 'Urbanist';
     font-size: 400;
     font-size: 0.9rem;
-    display: flex;
-    gap: 4px;
-    display: flex;
-    justify-content: center;
-    color: var(--color-gray);
+    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
-.container .signup__container .login__link p a{
+.container .signup__container .login__link a{
     color: var(--link-color);
+    font-family: 'Urbanist';
+    font-size: 0.9rem;
 }
 
-.container .signup__container .login__link p a:hover{
+.container .signup__container .login__link a:hover{
     text-decoration: underline;
 }
 
@@ -158,8 +164,11 @@
     font-size: 0.9rem;
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
+    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
-    color: var(--color-gray);
+    
 }
 
 .inputs__container{

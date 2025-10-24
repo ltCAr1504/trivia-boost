@@ -10,6 +10,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bitcount+Grid+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 *{
@@ -22,17 +24,33 @@
     font-family: 'Mona Sans';
 }
 
-:root{
-    --color-background: #f9fafb;
-    --purple-color: #fb17f8;
-    --color-rose: #FF6EC7;
-    --yellow-color: #fdc70c;
-    --color-background: #f9fafb;
-    --color-gray: #7b7194;
-    --color-blueDark: #0d0c22;
-    --color-blue: #36ffff;
-    --color-blue2: #007bff;  
+:root {
+  
+  --color-blue: #36ffff;
+  --color-blue2: #007bff;       
+  --color-yellow: gold;     
+  --color-blueDark: #1a1423;
+  --color-blueDark2: #0A091B;
+  --color-gray: #7b7194;
+  --color-green: #70e000;      
+  --color-white: white;      
+  --color-red: #FF4500;   
+  --color-purple: #6f42c1; 
+  --color-rose: #FF6EC7;
+  --color-green-aqua: #00EA9C;
+  --color-electric-yellow: linear-gradient(90deg, #FFF700, #FFD000, #FFB300);
+
+  --box-shadow: 0 2px 0 0 rgba(150,150,150,.4),
+                1px 0 0 0 rgba(150,150,150,.3),
+                -1px 0 0 0 rgba(150,150,150,.3),
+                0 -1px 0 0 rgba(150,150,150,.3);
+  --color-background: hsl(0 0 100%);
+  --color-primary: var(--color-blue);
+  --color-button: var(--color-yellow);
+  --color-success: var(--color-green);
+  --color-error: var(--color-red);
 }
+
 
 body{
     height: 100vh;
@@ -42,10 +60,8 @@ body{
 
 main{
     height: 100%;
-    padding: 10px;
     display: flex;
-    margin: 0;
-    padding: 0;
+    padding: 26px 26px
 }
 
 .sidebar__container{
@@ -53,11 +69,7 @@ main{
     border: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
     height: 100%;
-    border-radius: 16px;
-    padding: 24px;
 }
 
 .logo{
@@ -67,104 +79,42 @@ main{
 }
 
 
+.sidebar__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 
 
 .sidebar__buttons ul{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 10px 12px;
+    box-shadow: var(--box-shadow);
+    border-radius: 16px;
 }
 
 
 .sidebar__buttons ul li{
     display: flex;
     gap: 8px;
-    padding: 12px;
-    background: linear-gradient(90deg, #FF4F81, #FF7DAE);
-    box-shadow: inset 0 0 2px rgba(255,255,255,1);
+    padding: 12px 12px;
     align-items: center;
     justify-content: center;
     font-size: .9rem;
-    font-weight: 400;
-    position: relative;
-    border-radius: .5rem;
-    transition: 0.6s ease;
-}
-
-
-.sidebar__buttons ul li{
-    opacity: .9;
-}
-
-.sidebar__buttons ul li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 60%);
-    transform: skewX(-20deg);
-    transition: left 0.6s ease;
-    pointer-events: none;
-    z-index: 0;
-}
-
-
-.sidebar__buttons ul li:hover::before {
-    left: 150%;
-}
-
-
-
-
-
-
-
-.settings ul li{
-    display: flex;
-    gap: 8px;
-    padding: 12px;
-    background: linear-gradient(90deg, #FF4F81, #FF7DAE);
-    box-shadow: inset 0 0 2px rgba(255,255,255,1);
-    align-items: center;
-    justify-content: center;
-    font-size: .9rem;
+    box-shadow: var(--box-shadow);
     font-weight: 400;
     border-radius: .5rem;
-    transition: 0.6s ease;
-    position: relative;
+    cursor: pointer;
 }
 
-
-.settings ul li{
-    opacity: .9;
+.sidebar__buttons ul li svg{
+    cursor: pointer;
+    stroke: var(--color-rose);
 }
-
-
-
-.settings ul li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 60%);
-    transform: skewX(-20deg);
-    transition: left 0.6s ease;
-    pointer-events: none;
-    z-index: 0;
-}
-
-
-.settings ul li:hover::before {
-    left: 150%;
-}
-
-
-
-
 
 
 .main__dashboard{
@@ -178,10 +128,6 @@ main{
     z-index: -1;
 }
 
-svg{
-    stroke: white;
-    stroke-width: 1px;
-}
 
 .user__space{
     width: 100%;
@@ -191,24 +137,22 @@ svg{
 .profile__container{
     height: 100%;
     width: 100%;
-    padding: 20px;
     display: flex;
     justify-content: end;
 }
 
 .user__space .profile{
-    width: 300px;
-    height: 8%;
+    width: 270px;
+    height: 22%;
     display: flex;
     border-radius: 16px;
-    justify-content: center;
-    padding: 16px;
+    padding: 12px 12px;
     flex-direction: column;
     background: white;
-    box-shadow: 0 0 2px 1px rgba(0,0,0,.4);
+    box-shadow: var(--box-shadow);
 }
 
-.profile__img{
+.profile__info{
     display: flex;
     align-items: center;
     gap: 16px;
@@ -217,11 +161,83 @@ svg{
 
 .profile .content_container{
     display: flex;
+    flex-direction: column;
+}
+
+.username__box{
+    display: flex;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    align-items: center;
+    padding: 8px 8px;
 }
 
 .username{
-    font-size: 1.4rem;
-    font-family: 'Mona Sans';
+    font-size: 1rem;
+    font-family: 'Urbanist';
     font-weight: 500;
-    color: #222222;
+    color: var(--color-blueDark);
+    font-style: italic;
+}
+
+.level__user__bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+.level__user__bar .level__bar{
+    width: 100%;
+    height: 16px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.level__bar__info{
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    font-weight: 400;
+    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
+    background-clip: text;
+    font-style: italic;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Urbanist';
+    color: var(--color-gray);
+}
+
+
+.points__container{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.points__container .points__info{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.points__container .points__info h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Urbanist';
+    font-style: italic;
+    color: var(--color-blueDark);
+}
+
+.points__container .points__label{
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: 'Urbanist';
+    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
 }

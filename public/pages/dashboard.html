@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="icon" href="../assets/img/trivia-boost-logo.svg" type="img/svg+xml">
+    <link rel="icon" href="../assets/img/TriviaBoost-logo.svg" type="img/svg+xml">
     <title>Dashboard</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <main>
         <aside class="sidebar__container">
             <div class="logo">
-                <img src="../assets/img/trivia-boost-logo.svg" width="48" height="48" alt="">
+                <img src="../assets/img/TriviaBoost-logo.svg" width="48" height="48" alt="">
             </div>
             <nav class="sidebar__buttons">
                 <ul>
@@ -30,25 +30,31 @@
                     </li>
                 </ul>
             </nav>
-            <div class="settings">
-                <ul>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cog-icon lucide-cog"><path d="M11 10.27 7 3.34"/><path d="m11 13.73-4 6.93"/><path d="M12 22v-2"/><path d="M12 2v2"/><path d="M14 12h8"/><path d="m17 20.66-1-1.73"/><path d="m17 3.34-1 1.73"/><path d="M2 12h2"/><path d="m20.66 17-1.73-1"/><path d="m20.66 7-1.73 1"/><path d="m3.34 17 1.73-1"/><path d="m3.34 7 1.73 1"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="8"/></svg>
-                    </li>
-                </ul>
-            </div>
         </aside>
 
         <section class="user__space">
             <div class="profile__container">
                 <div class="profile">
                     <div class="content_container">
-                        <div class="badges">
-
-                        </div>
-                        <div class="profile__img">
+                        <div class="profile__info">
                             <img class='profile__picture' src="../assets/img/default-profile-img.svg" width="50" height="50" alt="">
-                            <h2 class="username" id="username">carlosmiguel_1101</h2>
+                            <div class="username__box">
+                                <h2 class="username" id="username">carlosmiguel_1101</h2>
+                            </div>
+                        </div>
+                        <div class="level__user__bar">
+                            <div class="level__bar"></div>
+                            <div class="level__bar__info">
+                                <span class="level__number" id="level__number">Lvl. 0</span>
+                                <span class="user__status" id="user__status">Beginner</span>
+                            </div>
+                        </div>
+                        <div class="points__container">
+                            <div class="points__info">
+                                <h3 id="points__number">1200</h3>
+                                <img class="points__img" src="../assets/img/pointsIconIllustration.svg" height="24" width="24" fetchpriority="high" alt="">
+                            </div>
+                            <span class="points__label">Points</span>
                         </div>
                     </div>
                 </div>
