@@ -138,7 +138,8 @@ main{
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: end;
 }
 
 .user__space .profile{
@@ -176,8 +177,8 @@ main{
 .username{
     font-size: 1rem;
     font-family: 'Urbanist';
-    font-weight: 500;
-    color: var(--color-blueDark);
+    font-weight: 400;
+    color: var(--color-gray);
     font-style: italic;
 }
 
@@ -201,11 +202,14 @@ main{
     justify-content: space-between;
     font-size: .9rem;
     font-weight: 400;
-    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
-    background-clip: text;
     font-style: italic;
-    -webkit-text-fill-color: transparent;
     font-family: 'Urbanist';
+}
+
+.level__bar__info .user__status{
+    font-style: italic;
+    font-weight: 400;
+    font-size: .9rem;
     color: var(--color-gray);
 }
 
@@ -221,12 +225,11 @@ main{
 .points__container .points__info{
     display: flex;
     align-items: center;
-    gap: 2px;
 }
 
 .points__container .points__info h3{
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     font-family: 'Urbanist';
     font-style: italic;
     color: var(--color-blueDark);
@@ -236,8 +239,20 @@ main{
     font-size: .9rem;
     font-weight: 400;
     font-family: 'Urbanist';
-    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-gray);
     font-style: italic;
+}
+.level__number{
+    color: var(--color-blueDark);
+    font-weight: 600;
+}
+
+
+.recommended__quiz__box{
+    width: 270px;
+    height: 42%;
+    margin-top: 24px;
+    box-shadow: var(--box-shadow);
+    border-radius: 16px;
+    background-color: white;
 }

@@ -259,9 +259,7 @@ body{
   font-size: 1.1rem;
   font-family: 'Urbanist', sans-serif;
   font-weight: 400;
-  background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-gray);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -276,7 +274,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-blueDark);
+  background: var(--color-rose);
   color: var(--color-white);
   border: none;
   display: flex;
@@ -287,10 +285,10 @@ body{
   font-family: 'Urbanist', sans-serif;
   color: var(--color-white);
   gap: 8px;
-  box-shadow: 0 3px 1px 0 hsla(270, 28%, 1%, 1),
-              1px 0 1px 0 hsla(270, 28%, 1%, 1),
-              -1px 0 1px 0 hsla(270, 28%, 1%, 1),
-              0 -1px 1px 0 hsla(270, 28%, 1%, 1);
+  box-shadow: 0 3px 1px 0 hsla(322, 100%, 60%, 1),
+              1px 0 1px 0 hsla(322, 100%, 60%, 1),
+              -1px 0 1px 0 hsla(322, 100%, 60%, 1),
+              0 -1px 1px 0 hsla(322, 100%, 60%, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -329,9 +327,7 @@ body{
   font-size: 1rem;
   font-family: 'Urbanist';
   font-weight:  400;
-  background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-gray);
 }
 
 .features__label__container{

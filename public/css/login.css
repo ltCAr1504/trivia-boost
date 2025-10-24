@@ -81,9 +81,7 @@ body{
     font-size: 0.9rem;
     font-family: 'Urbanist', sans-serif;
     font-weight: 400;
-    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-gray);
 }
 
 .errDivContainer{
@@ -191,9 +189,7 @@ body{
     display: flex;
     font-family: 'Urbanist';
     font-weight: 500;
-    background: linear-gradient(2.92deg, #fb17f8,#fdc70c);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-gray);
     font-size: 0.9rem;
 }
 
