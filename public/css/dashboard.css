@@ -12,6 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bitcount+Grid+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Great+Vibes&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 *{
@@ -32,7 +33,7 @@
   --color-blueDark: #1a1423;
   --color-blueDark2: #0A091B;
   --color-gray: #7b7194;
-  --color-green: #70e000;      
+  --color-green: hsl(90, 100%, 44%);      
   --color-white: white;      
   --color-red: #FF4500;   
   --color-purple: #6f42c1; 
@@ -131,20 +132,21 @@ main{
 
 .user__space{
     width: 100%;
-    height: 100%;
+    height: 100%; 
+    display: flex;
 }
 
 .profile__container{
     height: 100%;
-    width: 100%;
+    width: 32%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
 }
 
 .user__space .profile{
-    width: 270px;
-    height: 22%;
+    width: 350px;
+    height: 24%;
     display: flex;
     border-radius: 16px;
     padding: 12px 12px;
@@ -176,10 +178,10 @@ main{
 
 .username{
     font-size: 1rem;
+    letter-spacing: 1px;
     font-family: 'Urbanist';
     font-weight: 400;
     color: var(--color-gray);
-    font-style: italic;
 }
 
 .level__user__bar{
@@ -192,15 +194,15 @@ main{
 
 .level__user__bar .level__bar{
     width: 100%;
-    height: 16px;
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
+    height: 28px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, var(--color-rose), var(--color-blue));
 }
 
 .level__bar__info{
     display: flex;
     justify-content: space-between;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
     font-style: italic;
     font-family: 'Urbanist';
@@ -209,13 +211,14 @@ main{
 .level__bar__info .user__status{
     font-style: italic;
     font-weight: 400;
-    font-size: .9rem;
+    font-family: 'Urbanist';
+    font-size: 1rem;
     color: var(--color-gray);
 }
 
 
 .points__container{
-    margin-top: 12px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,7 +231,7 @@ main{
 }
 
 .points__container .points__info h3{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     font-family: 'Urbanist';
     font-style: italic;
@@ -236,7 +239,7 @@ main{
 }
 
 .points__container .points__label{
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'Urbanist';
     color: var(--color-gray);
@@ -248,11 +251,42 @@ main{
 }
 
 
-.recommended__quiz__box{
-    width: 270px;
+.skills__container{
+    width: 350px;
     height: 42%;
     margin-top: 24px;
     box-shadow: var(--box-shadow);
     border-radius: 16px;
     background-color: white;
+}
+
+.hours__played__container{
+    width: 350px;
+    height: 24%;
+    margin-top: 24px;
+    box-shadow: var(--box-shadow);
+    border-radius: 16px;
+    background-color: white;
+}
+
+.main__dashboard__content{
+    width: 100%;
+    height: 100vh;
+    padding: 24px 32px;
+}
+
+.main__dashboard__content .date{
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Urbanist';
+    color: var(--color-gray);
+    font-style: italic;
+}
+
+.main__dashboard__content .dashboard__title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: 'Urbanist';
+    color: var(--color-blueDark);
+    margin-top: 8px;
 }

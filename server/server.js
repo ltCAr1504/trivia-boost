@@ -26,5 +26,5 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(pagesRoutes)
 app.use('/api', apiUsers)
 app.use((req,res) => {
-  res.status(404).send('Page not found')
+  res.status(404).sendFile(path.join(__dirname, '..', 'public', 'pages', 'pageNotFound.html'))
 })
