@@ -94,7 +94,10 @@ main{
     flex-direction: column;
     gap: 40px;
     padding: 10px 12px;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 1.5px 0 0 rgba(150,150,150,.4),
+                1px 0 0 0 rgba(150,150,150,.3),
+                -1px 0 0 0 rgba(150,150,150,.3),
+                0 -1px 0 0 rgba(150,150,150,.3);
     border-radius: 16px;
 }
 
@@ -145,18 +148,23 @@ main{
 }
 
 .user__space .profile{
-    width: 350px;
-    height: 24%;
+    width: 400px;
+    height: 36%;
     display: flex;
-    border-radius: 16px;
+    justify-content: center;
+    border-radius: 24px;
     padding: 12px 12px;
     flex-direction: column;
     background: white;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 1.5px 0 0 rgba(150,150,150,.4),
+                1px 0 0 0 rgba(150,150,150,.3),
+                -1px 0 0 0 rgba(150,150,150,.3),
+                0 -1px 0 0 rgba(150,150,150,.3);
 }
 
 .profile__info{
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
 }
@@ -169,56 +177,57 @@ main{
 
 .username__box{
     display: flex;
-    width: 100%;
-    box-shadow: var(--box-shadow);
+    width: 70%;
+    box-shadow: 0 1px 0 0 rgba(150,150,150,.3),
+                1px 0 0 0 rgba(150,150,150,.3),
+                -1px 0 0 0 rgba(150,150,150,.3),
+                0 -1px 0 0 rgba(150,150,150,.3);
     border-radius: 8px;
     align-items: center;
     padding: 8px 8px;
 }
 
 .username{
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     font-family: 'Urbanist';
     font-weight: 400;
     color: var(--color-gray);
 }
 
-.level__user__bar{
+
+.level__user__info{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-    gap: 8px;
-}
-
-.level__user__bar .level__bar{
-    width: 100%;
-    height: 28px;
-    border-radius: 16px;
-    box-shadow: var(--box-shadow);
-}
-
-.level__bar__info{
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1rem;
+    margin-top: 20px;
     font-weight: 400;
     font-style: italic;
     font-family: 'Urbanist';
 }
 
-.level__bar__info .user__status{
+.level__user__info .user__status{
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
+    border-radius: 24px;
+    padding: 5px 10px;
+    background-color: var(--color-rose);
     font-family: 'Urbanist';
     font-size: 1rem;
-    color: var(--color-gray);
+    display: flex;
+    box-shadow: 0 3px 1px 0 hsla(322, 100%, 60%, 1),
+              1px 0 1px 0 hsla(322, 100%, 60%, 1),
+              -1px 0 1px 0 hsla(322, 100%, 60%, 1),
+              0 -1px 1px 0 hsla(322, 100%, 60%, 1);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
 }
 
 
 .points__container{
-    margin-top: 16px;
+    margin-top: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,10 +237,12 @@ main{
 .points__container .points__info{
     display: flex;
     align-items: center;
+    gap: 2px;
+    margin-top: 20px;
 }
 
 .points__container .points__info h3{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Urbanist';
     font-style: italic;
@@ -239,46 +250,62 @@ main{
 }
 
 .points__container .points__label{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Urbanist';
     color: var(--color-gray);
     font-style: italic;
 }
 .level__number{
-    color: var(--color-blueDark);
-    font-weight: 600;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    justify-content: center;
+    box-shadow: 0 3px 1px 0 hsl(220, 100%, 50%),
+                  1px 0 1px 0 hsl(220, 100%, 50%),
+                  -1px 0 1px 0 hsl(220, 100%, 50%),
+                  0 -1px 1px 0 hsl(220, 100%, 50%);
+    padding: 5px 10px;
+    font-weight: 500;
+    background-color: var(--color-blue2);
 }
 
 
-.points__chart__container{
-    width: 350px;
-    height: 42%;
+.user__performace{
+    width: 400px;
+    height: 64%;
     margin-top: 24px;
     padding: 20px 20px;
     box-shadow: var(--box-shadow);
-    border-radius: 16px;
+    border-radius: 24px;
     background-color: white;
 }
 
-.points__chart{
-    width: 100%;
-    height: 100%;
+.user__performace label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Urbanist';
+    font-size: 1.1rem;
+    color: var(--color-gray)
 }
 
-.hours__played__container{
-    width: 350px;
-    height: 24%;
-    margin-top: 24px;
-    box-shadow: var(--box-shadow);
-    border-radius: 16px;
-    background-color: white;
+.user__performace label svg{
+    fill: var(--color-blueDark);
+    stroke: none
 }
+
+.skillsGraph{
+    width: 300px;
+    height: 300px;
+}
+
 
 .main__dashboard__content{
     width: 100%;
     height: 100vh;
-    padding: 24px 32px;
+    padding: 24px 30px;
 }
 
 .main__dashboard__content .date{
@@ -295,4 +322,45 @@ main{
     font-family: 'Urbanist';
     color: var(--color-blueDark);
     margin-top: 8px;
+}
+
+.skillsGraph{
+    width: 300px;
+    height: 300px;
+}
+
+
+.data__1{
+    display: flex;
+    gap: 30px;
+}
+
+.data__1 .box__data{
+    margin-top: 24px;
+    width: 400px;
+    border-radius: 24px;
+    height: 200px;
+    box-shadow: var(--box-shadow);
+}
+
+.data__2{
+    display: flex;
+    gap: 30px;
+}
+
+.data__2 .box__data{
+    border-radius: 24px;
+    box-shadow: var(--box-shadow);
+}
+
+.data__2 .box__data1{
+    margin-top: 24px;
+    height: 550px;
+    width: 830px;
+}
+
+.data__2 .box__data2{
+    margin-top: 24px;
+    height: 550px;
+    width: 400px;
 }

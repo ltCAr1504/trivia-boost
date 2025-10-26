@@ -36,40 +36,52 @@
             <div class="main__dashboard__content">
                 <p class="date" id="date">Thurday, 20th February</p>
                 <h1 class="dashboard__title">Good Evening! Carlos,</h1>
+                <div class="data__1">
+                    <div class="box__data">
+
+                    </div>
+                    <div class="box__data">
+                        
+                    </div>
+                    <div class="box__data">
+                        
+                    </div>
+                </div>
+                <div class="data__2">
+                    <div class="box__data box__data1">
+
+                    </div>
+                    <div class="box__data box__data2"></div>
+                </div>
             </div>
             <div class="profile__container">
                 <div class="profile" id="profile">
                     <div class="content_container">
                         <div class="profile__info">
-                            <img class='profile__picture' src="../assets/img/default-profile-img.svg" width="50" height="50" alt="">
+                            <img class='profile__picture' src="../assets/img/default-profile-img.svg" width="90" height="90" alt="">
                             <div class="username__box">
                                 <h2 class="username" id="username">carlosmiguel_1101</h2>
                             </div>
                         </div>
-                        <div class="level__user__bar">
-                            <div class="level__bar"></div>
-                            <div class="level__bar__info">
-                                <span class="level__number" id="level__number">Lvl. 0</span>
-                                <span class="user__status" id="user__status">Beginner</span>
-                            </div>
+                        <div class="level__user__info">
+                            <span class="level__number" id="level__number">Lvl. 0</span>
+                            <span class="user__status" id="user__status">Beginner</span>
                         </div>
                         <div class="points__container">
                             <div class="points__info">
                                 <h3 id="points__number">1200</h3>
-                                <img class="points__img" src="../assets/img/pointsIconIllustration.svg" height="24" width="24" fetchpriority="high" alt="">
+                                <img class="points__img" src="../assets/img/pointsIconIllustration.svg" height="32" width="32" fetchpriority="high" alt="">
                             </div>
-                            <span class="points__label">Points</span>
+                            <span class="points__label">Pts</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="points__chart__container" id="points__chart__container">
-                    <div class="points__chart" id="points__chart">
+                <div class="user__performace" id="user__performace">
+                    <label for="">Performace skills<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></label>
+                    <canvas id="skillsGraph"></canvas>
+                    <div class="info__performance">
 
                     </div>
-                </div>
-                <div class="hours__played__container">
-
                 </div>
             </div>
         </section>
@@ -77,6 +89,6 @@
     
     <script type="module" src="../js/dashboard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
