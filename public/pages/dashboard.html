@@ -15,7 +15,7 @@
                 <img src="../assets/img/TriviaBoost-logo.svg" width="48" height="48" alt="">
             </div>
             <nav class="sidebar__buttons">
-                <ul>
+                <ul class="sidebar" id="sidebar">
                     <li>
                         <svg class="home__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                     </li>
@@ -38,7 +38,7 @@
                 <h1 class="dashboard__title">Good Evening! Carlos,</h1>
             </div>
             <div class="profile__container">
-                <div class="profile">
+                <div class="profile" id="profile">
                     <div class="content_container">
                         <div class="profile__info">
                             <img class='profile__picture' src="../assets/img/default-profile-img.svg" width="50" height="50" alt="">
@@ -63,8 +63,10 @@
                     </div>
                 </div>
 
-                <div class="skills__container">
-                    
+                <div class="points__chart__container" id="points__chart__container">
+                    <div class="points__chart" id="points__chart">
+
+                    </div>
                 </div>
                 <div class="hours__played__container">
 
@@ -74,5 +76,7 @@
     </main>
     
     <script type="module" src="../js/dashboard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </body>
 </html>

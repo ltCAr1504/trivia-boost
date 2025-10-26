@@ -196,7 +196,7 @@ main{
     width: 100%;
     height: 28px;
     border-radius: 16px;
-    background: linear-gradient(90deg, var(--color-rose), var(--color-blue));
+    box-shadow: var(--box-shadow);
 }
 
 .level__bar__info{
@@ -251,13 +251,19 @@ main{
 }
 
 
-.skills__container{
+.points__chart__container{
     width: 350px;
     height: 42%;
     margin-top: 24px;
+    padding: 20px 20px;
     box-shadow: var(--box-shadow);
     border-radius: 16px;
     background-color: white;
+}
+
+.points__chart{
+    width: 100%;
+    height: 100%;
 }
 
 .hours__played__container{
