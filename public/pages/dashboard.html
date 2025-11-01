@@ -1,94 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="icon" href="../assets/img/TriviaBoost-logo.svg" type="img/svg+xml">
-    <title>pupu</title>
-</head>
-<body>
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link
+      rel="icon"
+      href="../assets/img/TriviaBoost-logo.svg"
+      type="img/svg+xml"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
     <main>
-        <aside class="sidebar__container">
-            <div class="logo">
-                <img src="../assets/img/TriviaBoost-logo.svg" width="48" height="48" alt="">
+      <aside class="sidebar__container">
+        <div class="logo">
+          <img
+            src="../assets/img/TriviaBoost-logo.svg"
+            width="48"
+            height="48"
+            alt=""
+          />
+        </div>
+        <nav class="sidebar__buttons">
+          <ul class="sidebar" id="sidebar">
+            <li>
+              <svg
+                class="home__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-house-icon lucide-house"
+              >
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path
+                  d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="quizzes__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-zap-icon lucide-zap"
+              >
+                <path
+                  d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg
+                class="logiclab__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-brain-cog-icon lucide-brain-cog"
+              >
+                <path d="m10.852 14.772-.383.923" />
+                <path d="m10.852 9.228-.383-.923" />
+                <path d="m13.148 14.772.382.924" />
+                <path d="m13.531 8.305-.383.923" />
+                <path d="m14.772 10.852.923-.383" />
+                <path d="m14.772 13.148.923.383" />
+                <path
+                  d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 0 0-5.63-1.446 3 3 0 0 0-.368 1.571 4 4 0 0 0-2.525 5.771"
+                />
+                <path d="M17.998 5.125a4 4 0 0 1 2.525 5.771" />
+                <path d="M19.505 10.294a4 4 0 0 1-1.5 7.706" />
+                <path
+                  d="M4.032 17.483A4 4 0 0 0 11.464 20c.18-.311.892-.311 1.072 0a4 4 0 0 0 7.432-2.516"
+                />
+                <path d="M4.5 10.291A4 4 0 0 0 6 18" />
+                <path d="M6.002 5.125a3 3 0 0 0 .4 1.375" />
+                <path d="m9.228 10.852-.923-.383" />
+                <path d="m9.228 13.148-.923.383" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-pencil-ruler-icon lucide-pencil-ruler"
+              >
+                <path
+                  d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"
+                />
+                <path d="m8 6 2-2" />
+                <path d="m18 16 2-2" />
+                <path
+                  d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"
+                />
+                <path
+                  d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"
+                />
+                <path d="m15 5 4 4" />
+              </svg>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="user__space">
+        <div class="main__dashboard__content">
+          <p class="date" id="date">Thurday, 20th February</p>
+          <h1 class="dashboard__title">Good Evening! Carlos,</h1>
+          <div class="data__1">
+            <div class="box__data"></div>
+            <div class="box__data"></div>
+            <div class="box__data"></div>
+          </div>
+          <div class="data__2">
+            <div class="box__data box__data1"></div>
+            <div class="box__data box__data2"></div>
+          </div>
+        </div>
+        <div class="profile__container">
+          <div class="profile" id="profile">
+            <div class="content_container">
+              <div class="profile__info">
+                <img
+                  class="profile__picture"
+                  src="../assets/img/default-profile-img.svg"
+                  width="90"
+                  height="90"
+                  alt=""
+                />
+                <div class="username__box">
+                  <h2 class="username" id="username">carlosmiguel_1101</h2>
+                </div>
+              </div>
+              <div class="level__user__info">
+                <span class="level__number" id="level__number">Lvl. 0</span>
+                <span class="user__status" id="user__status">Beginner</span>
+              </div>
+              <div class="points__container">
+                <div class="points__info">
+                  <h3 id="points__number">1200</h3>
+                  <img
+                    class="points__img"
+                    src="../assets/img/pointsIconIllustration.svg"
+                    height="32"
+                    width="32"
+                    fetchpriority="high"
+                    alt=""
+                  />
+                </div>
+                <span class="points__label">Pts</span>
+              </div>
             </div>
-            <nav class="sidebar__buttons">
-                <ul class="sidebar" id="sidebar">
-                    <li>
-                        <svg class="home__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                    </li>
-                    <li>
-                        <svg class="quizzes__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
-                    </li> 
-                    <li>
-                        <svg class="logiclab__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-cog-icon lucide-brain-cog"><path d="m10.852 14.772-.383.923"/><path d="m10.852 9.228-.383-.923"/><path d="m13.148 14.772.382.924"/><path d="m13.531 8.305-.383.923"/><path d="m14.772 10.852.923-.383"/><path d="m14.772 13.148.923.383"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 0 0-5.63-1.446 3 3 0 0 0-.368 1.571 4 4 0 0 0-2.525 5.771"/><path d="M17.998 5.125a4 4 0 0 1 2.525 5.771"/><path d="M19.505 10.294a4 4 0 0 1-1.5 7.706"/><path d="M4.032 17.483A4 4 0 0 0 11.464 20c.18-.311.892-.311 1.072 0a4 4 0 0 0 7.432-2.516"/><path d="M4.5 10.291A4 4 0 0 0 6 18"/><path d="M6.002 5.125a3 3 0 0 0 .4 1.375"/><path d="m9.228 10.852-.923-.383"/><path d="m9.228 13.148-.923.383"/><circle cx="12" cy="12" r="3"/></svg>
-                    </li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pencil-ruler-icon lucide-pencil-ruler"><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"/><path d="m8 6 2-2"/><path d="m18 16 2-2"/><path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-
-        <section class="user__space">
-            <div class="main__dashboard__content">
-                <p class="date" id="date">Thurday, 20th February</p>
-                <h1 class="dashboard__title">Good Evening! Carlos,</h1>
-                <div class="data__1">
-                    <div class="box__data">
-
-                    </div>
-                    <div class="box__data">
-                        
-                    </div>
-                    <div class="box__data">
-                        
-                    </div>
-                </div>
-                <div class="data__2">
-                    <div class="box__data box__data1">
-
-                    </div>
-                    <div class="box__data box__data2"></div>
-                </div>
-            </div>
-            <div class="profile__container">
-                <div class="profile" id="profile">
-                    <div class="content_container">
-                        <div class="profile__info">
-                            <img class='profile__picture' src="../assets/img/default-profile-img.svg" width="90" height="90" alt="">
-                            <div class="username__box">
-                                <h2 class="username" id="username">carlosmiguel_1101</h2>
-                            </div>
-                        </div>
-                        <div class="level__user__info">
-                            <span class="level__number" id="level__number">Lvl. 0</span>
-                            <span class="user__status" id="user__status">Beginner</span>
-                        </div>
-                        <div class="points__container">
-                            <div class="points__info">
-                                <h3 id="points__number">1200</h3>
-                                <img class="points__img" src="../assets/img/pointsIconIllustration.svg" height="32" width="32" fetchpriority="high" alt="">
-                            </div>
-                            <span class="points__label">Pts</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="user__performace" id="user__performace">
-                    <label for="">Performace skills<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></label>
-                    <canvas id="skillsGraph"></canvas>
-                    <div class="info__performance">
-
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="user__performace" id="user__performace">
+            <label for=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield-icon lucide-shield"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                /></svg
+              >Performace skills</label
+            >
+            <canvas id="skillsGraph"></canvas>
+            <div class="info__performance"></div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <script type="module" src="../js/dashboard.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</body>
+  </body>
 </html>

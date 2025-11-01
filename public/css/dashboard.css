@@ -318,7 +318,7 @@ main{
 
 .main__dashboard__content .dashboard__title{
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Urbanist';
     color: var(--color-blueDark);
     margin-top: 8px;
